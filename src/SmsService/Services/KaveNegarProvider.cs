@@ -6,6 +6,7 @@ using Microsoft.Extensions.Options;
 using ResponseBase.Dtos;
 using SmsService.Configurations;
 using SmsService.Dtos;
+using SmsService.Enums;
 using SmsService.Interfaces;
 
 namespace SmsService.Services;
@@ -13,11 +14,11 @@ namespace SmsService.Services;
 public class KaveNegarProvider : ISmsProvider
 {
     private KavenegarApi _kaveNegarApi;
-    private readonly Provider _providerSettings;
+    private readonly ProviderSetting _providerSettings;
 
-    public KaveNegarProvider(IOptions<AppSetting> appSetting)
+    public KaveNegarProvider()
     { 
-        _providerSettings = appSetting.Value.Providers.FirstOrDefault(p => p.Name.Equals("kaveNegar"));
+        _providerSettings = Configuration.AppSetting.Providers.FirstOrDefault(p => p.Type is Provider.Kavenegar);
         _kaveNegarApi = new KavenegarApi(_providerSettings.ApiKey);
     }
     public async Task<ResponseBase<SendSmsResponse>> SendAsync(SendSmsRequest request)
