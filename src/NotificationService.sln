@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsService", "SmsService\SmsService.csproj", "{774DFB57-9B08-4F34-A143-A1A99285F3DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "EmailService\EmailService.csproj", "{7609D6BD-6110-40B5-8372-745A13CC35BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{774DFB57-9B08-4F34-A143-A1A99285F3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774DFB57-9B08-4F34-A143-A1A99285F3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774DFB57-9B08-4F34-A143-A1A99285F3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774DFB57-9B08-4F34-A143-A1A99285F3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7609D6BD-6110-40B5-8372-745A13CC35BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7609D6BD-6110-40B5-8372-745A13CC35BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7609D6BD-6110-40B5-8372-745A13CC35BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7609D6BD-6110-40B5-8372-745A13CC35BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
