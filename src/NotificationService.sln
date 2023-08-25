@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsService", "SmsService\Sm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "EmailService\EmailService.csproj", "{7609D6BD-6110-40B5-8372-745A13CC35BF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5CDE015C-78CC-49D2-AE14-6DD3FECD2972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResponseHelpers", "..\..\ResponseBase\ResponseBase\ResponseHelpers\ResponseHelpers.csproj", "{FB4B8CE2-CC56-4F72-BFD4-6FEA5B112514}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{7609D6BD-6110-40B5-8372-745A13CC35BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7609D6BD-6110-40B5-8372-745A13CC35BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7609D6BD-6110-40B5-8372-745A13CC35BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4B8CE2-CC56-4F72-BFD4-6FEA5B112514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4B8CE2-CC56-4F72-BFD4-6FEA5B112514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4B8CE2-CC56-4F72-BFD4-6FEA5B112514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4B8CE2-CC56-4F72-BFD4-6FEA5B112514}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB4B8CE2-CC56-4F72-BFD4-6FEA5B112514} = {5CDE015C-78CC-49D2-AE14-6DD3FECD2972}
 	EndGlobalSection
 EndGlobal
