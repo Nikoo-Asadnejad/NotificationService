@@ -8,7 +8,6 @@ namespace SmsService.Services;
 public class SmsService : ISmsService
 {
     public Func<Provider, ISmsProvider> _provider;
-
     public SmsService(Func<Provider, ISmsProvider> provider)
     {
         _provider = provider;
@@ -19,7 +18,5 @@ public class SmsService : ISmsService
             Provider.Kavenegar => await _provider(Provider.Kavenegar).SendAsync(request),
             _ => throw new Exception("Provider is not valid"),
         };
-
-
-    
+ 
 }
