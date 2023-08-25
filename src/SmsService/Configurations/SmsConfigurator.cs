@@ -18,4 +18,10 @@ public static class SmsConfigurator
         
         configuration.Bind(Configuration.AppSetting);
     }
+
+    public static void ConfigurePipeline(this WebApplication app)
+    {
+        app.UseAuthorization();
+        app.Run();
+    }
 }
