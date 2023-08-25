@@ -46,6 +46,18 @@
               "target": "Package",
               "version": "[1.0.7, )"
             },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.1.1-develop.1522, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.1.1-develop.1522, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.1, )"
