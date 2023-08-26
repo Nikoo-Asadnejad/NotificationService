@@ -6,14 +6,8 @@ name: .NET
 on:
   push:
     branches: [ "master" ]
-    paths:
-      - src/SmsService/**
-      - .github/workflows/smsService.yml
   pull_request:
     branches: [ "master" ]
-    paths:
-      - src/SmsService/**
-      - .github/workflows/smsService.yml
 
 jobs:
   build:
@@ -27,8 +21,11 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
+      working-directory: src
       run: dotnet restore
     - name: Build
+      working-directory: src
       run: dotnet build --no-restore
     - name: Test
+      working-directory: src
       run: dotnet test --no-build --verbosity normal
