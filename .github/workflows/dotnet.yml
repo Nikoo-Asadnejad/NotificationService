@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies 
-      run: dotnet restore */SmsService.csproj
+      run: dotnet restore src/SmsService/SmsService.csproj
     - name: Build
-      run: dotnet build */SmsService.csproj --no-restore
+      run: dotnet build src/SmsService/SmsService.csproj --no-restore
     - name: Test
-      run: dotnet test */SmsService.csproj --no-build --verbosity normal
+      run: dotnet test src/SmsService/SmsService.csproj --no-build --verbosity normal
