@@ -20,9 +20,9 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Restore dependencies 
+      run: dotnet restore SmsService/EmailService.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build SmsService/EmailService.csproj --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test SmsService/EmailService.csproj --no-build --verbosity normal
