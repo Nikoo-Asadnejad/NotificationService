@@ -1,3 +1,4 @@
+using MassTransit;
 using SmsService.Enums;
 using SmsService.Interfaces;
 using SmsService.Services;
@@ -17,6 +18,10 @@ public static class SmsConfigurator
             });
         
         configuration.Bind(Configuration.AppSetting);
+        services.AddMassTransit(configurator =>
+        {
+            configurator.UsingRabbitMq();
+        });
     }
 
     public static void ConfigurePipeline(this WebApplication app)
