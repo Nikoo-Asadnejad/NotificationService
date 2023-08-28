@@ -5,7 +5,7 @@ using SmsService.Services;
 
 namespace SmsService.Configurations;
 
-public static class SmsConfigurator
+public static class Configurator
 {
     public static void InjectService(this IServiceCollection services , IConfiguration configuration)
     {
@@ -27,6 +27,5 @@ public static class SmsConfigurator
     public static void ConfigurePipeline(this WebApplication app)
     {
         app.UseAuthorization();
-        app.Run();
     }
 }
