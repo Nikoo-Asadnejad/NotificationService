@@ -9074,8 +9074,8 @@
     },
     "ResponseHelpers/1.0.0": {
       "type": "project",
-      "path": "../../../ResponseBase/ResponseBase/ResponseHelpers/ResponseHelpers.csproj",
-      "msbuildProject": "../../../ResponseBase/ResponseBase/ResponseHelpers/ResponseHelpers.csproj"
+      "path": "../Common/ResponseHelpers/ResponseHelpers.csproj",
+      "msbuildProject": "../Common/ResponseHelpers/ResponseHelpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9114,8 +9114,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/macbook/Projects/ResponseBase/ResponseBase/ResponseHelpers/ResponseHelpers.csproj": {
-              "projectPath": "/Users/macbook/Projects/ResponseBase/ResponseBase/ResponseHelpers/ResponseHelpers.csproj"
+            "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj": {
+              "projectPath": "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj"
             }
           }
         }

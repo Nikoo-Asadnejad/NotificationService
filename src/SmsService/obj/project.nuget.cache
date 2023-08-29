@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WIWeWVEUp5CBtP8unE+wBnjOit1FuYNu1jm2LB0R14kVfKG9Zdnyr4YxADYv06J7URbvz+VV+p+M3G33wPyvyw==",
+  "dgSpecHash": "TkUoJEZ728iHbMS4BqYDAFtN4DGfTht/NAaArMEy7fkaPxmSVkFmMLekHWv2cUPX0IfvKBRR/0dY4XhPz59pOw==",
   "success": true,
   "projectFilePath": "/Users/macbook/Projects/NotificationService/src/SmsService/SmsService.csproj",
   "expectedPackageFiles": [

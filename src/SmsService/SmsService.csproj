@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\ResponseBase\ResponseBase\ResponseHelpers\ResponseHelpers.csproj" />
+      <ProjectReference Include="..\Common\ResponseHelpers\ResponseHelpers.csproj" />
     </ItemGroup>
 
 </Project>

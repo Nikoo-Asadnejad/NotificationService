@@ -4,6 +4,69 @@
     "/Users/macbook/Projects/NotificationService/src/SmsService/SmsService.csproj": {}
   },
   "projects": {
+    "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj",
+        "projectName": "ResponseHelpers",
+        "projectPath": "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj",
+        "packagesPath": "/Users/macbook/.nuget/packages/",
+        "outputPath": "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbook/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/macbook/Projects/NotificationService/src/SmsService/SmsService.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,8 +89,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/macbook/Projects/ResponseBase/ResponseBase/ResponseHelpers/ResponseHelpers.csproj": {
-                "projectPath": "/Users/macbook/Projects/ResponseBase/ResponseBase/ResponseHelpers/ResponseHelpers.csproj"
+              "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj": {
+                "projectPath": "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj"
               }
             }
           }
@@ -82,69 +145,6 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/macbook/Projects/ResponseBase/ResponseBase/ResponseHelpers/ResponseHelpers.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/macbook/Projects/ResponseBase/ResponseBase/ResponseHelpers/ResponseHelpers.csproj",
-        "projectName": "ResponseHelpers",
-        "projectPath": "/Users/macbook/Projects/ResponseBase/ResponseBase/ResponseHelpers/ResponseHelpers.csproj",
-        "packagesPath": "/Users/macbook/.nuget/packages/",
-        "outputPath": "/Users/macbook/Projects/ResponseBase/ResponseBase/ResponseHelpers/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/macbook/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Mvc": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Core": {
-              "target": "Package",
-              "version": "[2.2.5, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
