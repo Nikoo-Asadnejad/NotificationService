@@ -13,6 +13,7 @@ public static class SmsConfigurator
         {
             configurator.UsingRabbitMq();
         });
+        configuration.Bind(Configuration.AppSetting);
     }
 
     public static void ConfigurePipeline(this WebApplication app)
