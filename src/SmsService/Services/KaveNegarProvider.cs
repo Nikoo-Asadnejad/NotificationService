@@ -11,7 +11,7 @@ using SmsService.Interfaces;
 
 namespace SmsService.Services;
 
-public class KaveNegarProvider : ISmsProvider
+public sealed class KaveNegarProvider : ISmsProvider
 {
     private KavenegarApi _kaveNegarApi;
     private readonly ProviderSetting _providerSettings;

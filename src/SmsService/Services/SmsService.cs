@@ -5,7 +5,7 @@ using SmsService.Interfaces;
 
 namespace SmsService.Services;
 
-public class SmsService : ISmsService
+public sealed class SmsService : ISmsService
 {
     public Func<Provider, ISmsProvider> _provider;
     public SmsService(Func<Provider, ISmsProvider> provider)
