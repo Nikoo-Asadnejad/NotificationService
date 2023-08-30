@@ -1,4 +1,4 @@
-using EmailService.Dtos;
+using EmailContract.Models;
 
 namespace EmailService.Interfaces;
 

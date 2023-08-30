@@ -2,7 +2,6 @@ using System.Net;
 using Kavenegar;
 using Kavenegar.Core.Exceptions;
 using Kavenegar.Core.Models;
-using Microsoft.Extensions.Options;
 using ResponseBase.Dtos;
 using SmsService.Configurations;
 using SmsService.Interfaces;

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZB/WKM7X9xXlxiulaSVcLJoRG3ERfdX3QfLn2DFmBTxCsudrs1OCs+uTvbooGsM6qFyI4kssSaCoNmc6wl5Jmw==",
+  "dgSpecHash": "WEr28K7wbF7B8da578Muypizf2k5TS5mYii9jEoCXRFIgU6fQRXkrV0OLbCbOdOXqE9X/HGLgP/+O3mEYEciMw==",
   "success": true,
   "projectFilePath": "/Users/macbook/Projects/NotificationService/src/EmailService/EmailService.csproj",
   "expectedPackageFiles": [

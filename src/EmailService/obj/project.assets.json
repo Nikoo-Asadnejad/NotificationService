@@ -602,6 +602,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "EmailContract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/EmailContract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmailContract.dll": {}
+        }
       }
     }
   },
@@ -1842,10 +1852,16 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "EmailContract/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/EmailContract/EmailContract.csproj",
+      "msbuildProject": "../Contracts/EmailContract/EmailContract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "EmailContract >= 1.0.0",
       "MailKit >= 4.1.0",
       "MassTransit >= 8.1.1-develop.1522",
       "MassTransit.AspNetCore >= 7.3.1",
@@ -1878,7 +1894,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj": {
+              "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

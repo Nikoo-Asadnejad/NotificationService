@@ -1,5 +1,5 @@
+using EmailContract.Models;
 using EmailService.Configurations;
-using EmailService.Dtos;
 using EmailService.Interfaces;
 using MailKit.Net.Smtp;
 using MimeKit;
