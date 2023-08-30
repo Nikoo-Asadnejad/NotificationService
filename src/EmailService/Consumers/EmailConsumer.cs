@@ -1,0 +1,18 @@
+using EmailContract.Models;
+using EmailService.Interfaces;
+using MassTransit;
+
+namespace EmailService.Consumers;
+
+public class EmailConsumer : IConsumer<SendEmailRequest>
+{
+    // private readonly IEmailService _emailService;
+    // public EmailConsumer(IEmailService emailService) : base()
+    // {
+    //     _emailService = emailService;
+    // }
+    public async Task Consume(ConsumeContext<SendEmailRequest> context)
+    {
+        //await _emailService.SendAsync(context.Message);
+    }
+}
