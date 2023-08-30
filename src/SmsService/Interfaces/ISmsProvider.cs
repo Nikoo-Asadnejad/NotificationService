@@ -1,5 +1,5 @@
 using ResponseBase.Dtos;
-using SmsService.Dtos;
+using SmsContract.Models;
 
 namespace SmsService.Interfaces;
 

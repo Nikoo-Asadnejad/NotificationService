@@ -26,12 +26,11 @@ public sealed class EmailSenderService : IEmailService
 
     private void Send(MimeMessage mailMessage)
     {
-        using (var client = new SmtpClient())
+        using (var client = new SmtpClient()) 
 
             try
             {
-                client.Connect(Configuration.AppSetting.MailSettings.Server, Configuration.AppSetting.MailSettings.Port,
-                    true);
+                client.Connect(Configuration.AppSetting.MailSettings.Server, Configuration.AppSetting.MailSettings.Port, true);
                 client.AuthenticationMechanisms.Remove("XOAUTH2");
                 client.Authenticate(Configuration.AppSetting.MailSettings.UserName,
                     Configuration.AppSetting.MailSettings.Password);

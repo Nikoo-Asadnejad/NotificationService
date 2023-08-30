@@ -1,7 +1,7 @@
 using MassTransit;
-using SmsService.Enums;
 using SmsService.Interfaces;
 using SmsService.Services;
+using SmsContract.Enums;
 
 namespace SmsService.Configurations;
 

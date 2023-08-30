@@ -3150,6 +3150,16 @@
         "runtime": {
           "bin/placeholder/ResponseHelpers.dll": {}
         }
+      },
+      "SmsContract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/SmsContract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SmsContract.dll": {}
+        }
       }
     }
   },
@@ -9076,6 +9086,11 @@
       "type": "project",
       "path": "../Common/ResponseHelpers/ResponseHelpers.csproj",
       "msbuildProject": "../Common/ResponseHelpers/ResponseHelpers.csproj"
+    },
+    "SmsContract/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/SmsContract/SmsContract.csproj",
+      "msbuildProject": "../Contracts/SmsContract/SmsContract.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9086,6 +9101,7 @@
       "MassTransit.RabbitMQ >= 8.1.1-develop.1522",
       "Microsoft.AspNetCore.OpenApi >= 7.0.1",
       "ResponseHelpers >= 1.0.0",
+      "SmsContract >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -9116,6 +9132,9 @@
           "projectReferences": {
             "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj": {
               "projectPath": "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj"
+            },
+            "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj": {
+              "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj"
             }
           }
         }

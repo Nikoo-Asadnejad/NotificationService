@@ -67,6 +67,59 @@
         }
       }
     },
+    "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj",
+        "projectName": "SmsContract",
+        "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj",
+        "packagesPath": "/Users/macbook/.nuget/packages/",
+        "outputPath": "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbook/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/macbook/Projects/NotificationService/src/SmsService/SmsService.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -91,6 +144,9 @@
             "projectReferences": {
               "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj": {
                 "projectPath": "/Users/macbook/Projects/NotificationService/src/Common/ResponseHelpers/ResponseHelpers.csproj"
+              },
+              "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj": {
+                "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj"
               }
             }
           }

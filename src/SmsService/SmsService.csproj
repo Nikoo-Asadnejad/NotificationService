@@ -24,6 +24,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Common\ResponseHelpers\ResponseHelpers.csproj" />
+      <ProjectReference Include="..\Contracts\SmsContract\SmsContract.csproj" />
     </ItemGroup>
 
 </Project>

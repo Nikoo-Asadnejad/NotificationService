@@ -1,5 +1,5 @@
-using SmsService.Enums;
+using SmsContract.Enums;
 
-namespace SmsService.Dtos;
+namespace SmsContract.Models;
 
 public record SendSmsRequest(Provider Provider, string message, string receptorPhoneNumber);

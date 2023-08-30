@@ -1,3 +1,3 @@
-namespace SmsService.Dtos;
+namespace SmsContract.Models;
 
 public record SendSmsResponse(string providesStatus);

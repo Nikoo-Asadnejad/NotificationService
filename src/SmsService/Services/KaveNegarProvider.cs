@@ -5,9 +5,9 @@ using Kavenegar.Core.Models;
 using Microsoft.Extensions.Options;
 using ResponseBase.Dtos;
 using SmsService.Configurations;
-using SmsService.Dtos;
-using SmsService.Enums;
 using SmsService.Interfaces;
+using SmsContract.Enums;
+using SmsContract.Models;
 
 namespace SmsService.Services;
 

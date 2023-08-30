@@ -1,4 +1,4 @@
-using SmsService.Enums;
+using SmsContract.Enums;
 
 namespace SmsService.Configurations;
 

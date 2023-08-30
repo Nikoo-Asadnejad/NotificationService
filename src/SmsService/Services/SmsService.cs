@@ -1,7 +1,7 @@
 using ResponseBase.Dtos;
-using SmsService.Dtos;
-using SmsService.Enums;
 using SmsService.Interfaces;
+using SmsContract.Enums;
+using SmsContract.Models;
 
 namespace SmsService.Services;
 

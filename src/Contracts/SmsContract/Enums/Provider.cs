@@ -1,4 +1,4 @@
-namespace SmsService.Enums;
+namespace SmsContract.Enums;
 
 public enum Provider
 {
