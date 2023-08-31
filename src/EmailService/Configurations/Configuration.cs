@@ -1,10 +1,10 @@
 namespace EmailService.Configurations;
 
-public static class Configuration
+public struct Configuration
 {
     public static AppSetting AppSetting { get;}
 }
-public record AppSetting
+public struct AppSetting
 {
     public Logging Logging { get; set; }
     public MailSettings MailSettings { get; set; }
@@ -12,12 +12,12 @@ public record AppSetting
     public RabbitMqSetting RabbitMqSetting { get; set; }
 }
 
-public record Logging
+public struct Logging
 {
     public LogLevel LogLevel { get; set; }
 }
 
-public record LogLevel
+public struct LogLevel
 {
     public string Default { get; set; }
     public string Microsoft_AspNetCore { get; set; }
