@@ -2,6 +2,7 @@ using MassTransit;
 using SmsService.Interfaces;
 using SmsService.Services;
 using SmsContract.Enums;
+using SmsService.Consumers;
 
 namespace SmsService.Configurations;
 
@@ -20,7 +21,24 @@ public static class Configurator
         configuration.Bind(Configuration.AppSetting);
         services.AddMassTransit(configurator =>
         {
+            var rabbitSetting = Configuration.AppSetting.RabbitMqSetting;
             configurator.UsingRabbitMq();
+            configurator.AddConsumer<SmsConsumer>();
+            configurator.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
+            {
+                cfg.Host(new Uri(rabbitSetting.Url), h =>
+                {
+                    h.Username(rabbitSetting.UserName);
+                    h.Password(rabbitSetting.Password);
+                });
+                cfg.ReceiveEndpoint("smsQueue", ep =>
+                {
+                    ep.PrefetchCount = 16;
+                    ep.Durable = true;
+                    ep.UseMessageRetry(r => r.Interval(2, 100));
+                    ep.ConfigureConsumer<SmsConsumer>(provider);
+                });
+            }));
         });
     }
 
