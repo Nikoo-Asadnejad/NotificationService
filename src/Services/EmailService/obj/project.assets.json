@@ -1861,7 +1861,6 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "/Users/macbook/Projects/NotificationService/src/Services/Contracts/EmailContract/EmailContract.csproj",
       "EmailContract >= 1.0.0",
       "MailKit >= 4.1.0",
       "MassTransit >= 8.1.1-develop.1522",
@@ -1898,9 +1897,6 @@
           "projectReferences": {
             "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj": {
               "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj"
-            },
-            "/Users/macbook/Projects/NotificationService/src/Services/Contracts/EmailContract/EmailContract.csproj": {
-              "projectPath": "/Users/macbook/Projects/NotificationService/src/Services/Contracts/EmailContract/EmailContract.csproj"
             }
           }
         }
@@ -1962,16 +1958,5 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project '/Users/macbook/Projects/NotificationService/src/Services/Contracts/EmailContract/EmailContract.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "/Users/macbook/Projects/NotificationService/src/Services/Contracts/EmailContract/EmailContract.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  }
 }

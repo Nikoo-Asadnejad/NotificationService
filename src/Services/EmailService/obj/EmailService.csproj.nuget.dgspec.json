@@ -81,9 +81,6 @@
             "projectReferences": {
               "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj": {
                 "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj"
-              },
-              "/Users/macbook/Projects/NotificationService/src/Services/Contracts/EmailContract/EmailContract.csproj": {
-                "projectPath": "/Users/macbook/Projects/NotificationService/src/Services/Contracts/EmailContract/EmailContract.csproj"
               }
             }
           }

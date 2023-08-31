@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "G4USH8Db7da76wl2uoUfLP2HfMLDewwu1d0gCsB4VQgqVaQaFMJcprgSwmkWQHEbVsiiUilAE2/YMvItKYXZsw==",
-  "success": false,
+  "dgSpecHash": "hNjfecxTbL9+9PhN+TIDOLD2dJG64kHb4SG3HmXeK4YZWJouvS4enCK95mLcxxFi7plqJwB+62ny2d255qjSQQ==",
+  "success": true,
   "projectFilePath": "/Users/macbook/Projects/NotificationService/src/Services/EmailService/EmailService.csproj",
   "expectedPackageFiles": [
     "/Users/macbook/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
@@ -41,15 +41,5 @@
     "/Users/macbook/.nuget/packages/system.text.json/7.0.3/system.text.json.7.0.3.nupkg.sha512",
     "/Users/macbook/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project '/Users/macbook/Projects/NotificationService/src/Services/Contracts/EmailContract/EmailContract.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "/Users/macbook/Projects/NotificationService/src/Services/Contracts/EmailContract/EmailContract.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

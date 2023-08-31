@@ -1,0 +1,12 @@
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/bin/Debug/net7.0/EmailContract.deps.json
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/bin/Debug/net7.0/EmailContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/bin/Debug/net7.0/EmailContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/obj/Debug/net7.0/EmailContract.csproj.AssemblyReference.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/obj/Debug/net7.0/EmailContract.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/obj/Debug/net7.0/EmailContract.AssemblyInfoInputs.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/obj/Debug/net7.0/EmailContract.AssemblyInfo.cs
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/obj/Debug/net7.0/EmailContract.csproj.CoreCompileInputs.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/obj/Debug/net7.0/EmailContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/obj/Debug/net7.0/refint/EmailContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/obj/Debug/net7.0/EmailContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/obj/Debug/net7.0/ref/EmailContract.dll

@@ -10,6 +10,12 @@ public sealed class EmailSenderService : IEmailService
 {
     public async Task SendAsync(SendEmailRequest message)
     {
+        if (string.IsNullOrWhiteSpace(message.ReceptorMail))
+            throw new ArgumentException("ReceptorMail can't be null");
+        
+        if (string.IsNullOrWhiteSpace(message.Body))
+            throw new ArgumentException("Body can't be null");
+
         var emailMessage = CreateEmailMessage(message);
         Send(emailMessage);
     }
