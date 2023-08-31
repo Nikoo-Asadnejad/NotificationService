@@ -1,13 +1,18 @@
 using MassTransit;
 using SmsContract.Models;
+using SmsService.Interfaces;
 
 namespace SmsService.Consumers;
 
 public class SmsConsumer : IConsumer<SendSmsRequest>
 {
-    
-    public Task Consume(ConsumeContext<SendSmsRequest> context )
+    private readonly ISmsService _smsService;
+    public SmsConsumer(ISmsService smsService)
     {
-        throw new NotImplementedException();
+        _smsService = smsService;
+    }
+    public async Task Consume(ConsumeContext<SendSmsRequest> context )
+    {
+        await _smsService.SendSmsAsync(context.Message);
     }
 }
