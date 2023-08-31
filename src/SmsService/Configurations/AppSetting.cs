@@ -2,13 +2,13 @@ using SmsContract.Enums;
 
 namespace SmsService.Configurations;
 
-public class AppSetting
+public struct AppSetting
 {
     public List<ProviderSetting> Providers { get; set; }
     public  RabbitMqSetting RabbitMqSetting { get; set; }
 }
 
-public class ProviderSetting
+public struct ProviderSetting
 {
     public Provider Type { get; set; }
     public string Name { get; set; }
