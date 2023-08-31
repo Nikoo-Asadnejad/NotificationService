@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="KavenegarDotNetCore" Version="1.0.7" />
+        <PackageReference Include="MailKit" Version="4.1.0" />
         <PackageReference Include="MassTransit" Version="8.1.1-develop.1522" />
         <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
         <PackageReference Include="MassTransit.RabbitMQ" Version="8.1.1-develop.1522" />
@@ -23,8 +23,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Common\ResponseHelpers\ResponseHelpers.csproj" />
-      <ProjectReference Include="..\Contracts\SmsContract\SmsContract.csproj" />
+      <ProjectReference Include="..\..\Contracts\EmailContract\EmailContract.csproj" />
+      <ProjectReference Include="..\Contracts\EmailContract\EmailContract.csproj" />
     </ItemGroup>
 
 </Project>
