@@ -2,6 +2,7 @@ using EmailService.Consumers;
 using EmailService.Interfaces;
 using EmailService.Services;
 using MassTransit;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 namespace EmailService.Configurations;
 
@@ -42,8 +43,14 @@ public static class SmsConfigurator
 
     public static void ConfigurePipeline(this WebApplication app)
     {
-        app.UseHttpsRedirection();
-        app.UseAuthorization();
-        app.MapControllers();
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapHealthChecks("/health/ready", new HealthCheckOptions()
+            {
+                Predicate = (check) => check.Tags.Contains("ready"),
+            });
+
+            endpoints.MapHealthChecks("/health/live", new HealthCheckOptions());
+        });
     }
 }

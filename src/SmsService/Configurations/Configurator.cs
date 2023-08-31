@@ -1,4 +1,5 @@
 using MassTransit;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using SmsService.Interfaces;
 using SmsService.Services;
 using SmsContract.Enums;
@@ -47,6 +48,14 @@ public static class Configurator
     });
     public static void ConfigurePipeline(this WebApplication app)
     {
-        app.UseAuthorization();
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapHealthChecks("/health/ready", new HealthCheckOptions()
+            {
+                Predicate = (check) => check.Tags.Contains("ready"),
+            });
+
+            endpoints.MapHealthChecks("/health/live", new HealthCheckOptions());
+        });
     }
 }
