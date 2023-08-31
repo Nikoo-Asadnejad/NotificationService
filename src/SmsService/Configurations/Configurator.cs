@@ -28,7 +28,8 @@ public static class Configurator
         var rabbitSetting = Configuration.AppSetting.RabbitMqSetting;
         configurator.UsingRabbitMq();
         configurator.AddConsumer<SmsConsumer>();
-        configurator.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
+        configurator.AddBus(provider => 
+            Bus.Factory.CreateUsingRabbitMq(cfg =>
         {
             cfg.Host(new Uri(rabbitSetting.Url), h =>
             {
