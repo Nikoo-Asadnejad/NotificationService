@@ -7,8 +7,7 @@ public struct Configuration
 public struct AppSetting
 {
     public Logging Logging { get; set; }
-    public MailSettings MailSettings { get; set; }
-    
+    public MailSetting MailSettings { get; set; }
     public RabbitMqSetting RabbitMqSetting { get; set; }
 }
 
@@ -23,7 +22,7 @@ public struct LogLevel
     public string Microsoft_AspNetCore { get; set; }
 }
 
-public record MailSettings
+public record MailSetting
 {
     public string Server { get; set; }
     public int Port { get; set; }

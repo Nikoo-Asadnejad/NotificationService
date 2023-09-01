@@ -1,7 +1,4 @@
 using EmailService.Configurations;
-using EmailService.Consumers;
-using MassTransit;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
