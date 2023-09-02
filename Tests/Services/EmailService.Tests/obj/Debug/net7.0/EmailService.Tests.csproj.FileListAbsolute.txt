@@ -128,3 +128,5 @@
 /Users/macbook/Projects/NotificationService/Tests/Services/EmailService.Tests/obj/Debug/net7.0/EmailService.Tests.pdb
 /Users/macbook/Projects/NotificationService/Tests/Services/EmailService.Tests/obj/Debug/net7.0/EmailService.Tests.genruntimeconfig.cache
 /Users/macbook/Projects/NotificationService/Tests/Services/EmailService.Tests/obj/Debug/net7.0/ref/EmailService.Tests.dll
+/Users/macbook/Projects/NotificationService/Tests/Services/EmailService.Tests/bin/Debug/net7.0/Castle.Core.dll
+/Users/macbook/Projects/NotificationService/Tests/Services/EmailService.Tests/bin/Debug/net7.0/Moq.dll
