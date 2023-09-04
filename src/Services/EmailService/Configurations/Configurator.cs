@@ -15,7 +15,10 @@ public static class SmsConfigurator
         {
             configurator.UsingRabbitMq();
         });
-        configuration.Bind(Configuration.AppSetting);
+
+        var appSetting = new AppSetting();
+        configuration.Bind(appSetting);
+        Configuration.AppSetting = appSetting;
     }
     
     public static void AddRabbitConsumer(this IServiceCollection services)

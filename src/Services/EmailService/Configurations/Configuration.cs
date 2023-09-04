@@ -2,9 +2,9 @@ namespace EmailService.Configurations;
 
 public struct Configuration
 {
-    public static AppSetting AppSetting { get;}
+    public static AppSetting AppSetting { get; set; }
 }
-public struct AppSetting
+public class AppSetting
 {
     public Logging Logging { get; set; }
     public MailSetting MailSettings { get; set; }
