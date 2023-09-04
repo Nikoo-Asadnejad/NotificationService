@@ -16,7 +16,7 @@ public static class SmsConfigurator
             configurator.UsingRabbitMq();
         });
 
-        var appSetting = new AppSetting();
+        AppSetting appSetting = new ();
         configuration.Bind(appSetting);
         Configuration.AppSetting = appSetting;
     }

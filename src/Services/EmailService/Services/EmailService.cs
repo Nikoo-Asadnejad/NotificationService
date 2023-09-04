@@ -2,6 +2,7 @@ using EmailContract.Models;
 using EmailService.Configurations;
 using EmailService.Interfaces;
 using MailKit.Net.Smtp;
+using Microsoft.Extensions.Options;
 using MimeKit;
 
 namespace EmailService.Services;
@@ -10,10 +11,10 @@ public sealed class EmailSenderService : IEmailService
 {
     private readonly ISmtpClient _smtpClient;
     private readonly MailSetting _mailSetting;
-    public EmailSenderService(ISmtpClient smtpClient)
+    public EmailSenderService(ISmtpClient smtpClient , IOptions<AppSetting> config)
     {
         _smtpClient = smtpClient;
-        _mailSetting = Configuration.AppSetting.MailSettings;
+        _mailSetting = config.Value.MailSettings;
     }
 
     public async Task SendAsync(SendEmailRequest message)
@@ -48,9 +49,9 @@ public sealed class EmailSenderService : IEmailService
             try
             {
                 _smtpClient.Connect(_mailSetting.Server,_mailSetting.Port, true, cancellationToken);
-                _smtpClient.AuthenticationMechanisms.Remove("XOAUTH2");
+                //_smtpClient.AuthenticationMechanisms.Remove("XOAUTH2");
                 _smtpClient.Authenticate(_mailSetting.UserName,_mailSetting.Password,cancellationToken);
-                _smtpClient.Send(mailMessage,cancellationToken);
+                _smtpClient.Send(null,mailMessage,cancellationToken,null);
             }
             catch
             {
