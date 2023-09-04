@@ -33,8 +33,7 @@ public sealed class EmailSenderService : IEmailService
     private MimeMessage CreateEmailMessage(SendEmailRequest message)
     {
         MimeMessage emailMessage = new();
-        emailMessage.From.Add(new MailboxAddress(name: Configuration.AppSetting.MailSettings.SenderName,
-            Configuration.AppSetting.MailSettings.SenderEmail));
+        emailMessage.From.Add(new MailboxAddress(name: Configuration.AppSetting.MailSettings.SenderName, Configuration.AppSetting.MailSettings.SenderEmail));
         emailMessage.To.Add(new MailboxAddress(name: message.ReceptorName, message.ReceptorMail));
         emailMessage.Subject = message.Subject;
         emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Text) { Text = message.Body };
