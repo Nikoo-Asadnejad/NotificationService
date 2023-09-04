@@ -9,10 +9,11 @@ namespace EmailService.Services;
 public sealed class EmailSenderService : IEmailService
 {
     private readonly ISmtpClient _smtpClient;
-
+    private readonly MailSetting _mailSetting;
     public EmailSenderService(ISmtpClient smtpClient)
     {
         _smtpClient = smtpClient;
+        _mailSetting = Configuration.AppSetting.MailSettings;
     }
 
     public async Task SendAsync(SendEmailRequest message)
@@ -33,7 +34,7 @@ public sealed class EmailSenderService : IEmailService
     private MimeMessage CreateEmailMessage(SendEmailRequest message)
     {
         MimeMessage emailMessage = new();
-        emailMessage.From.Add(new MailboxAddress(name: Configuration.AppSetting.MailSettings.SenderName, Configuration.AppSetting.MailSettings.SenderEmail));
+        emailMessage.From.Add(new MailboxAddress(name: _mailSetting.SenderName, _mailSetting.SenderEmail));
         emailMessage.To.Add(new MailboxAddress(name: message.ReceptorName, message.ReceptorMail));
         emailMessage.Subject = message.Subject;
         emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Text) { Text = message.Body };
@@ -46,15 +47,9 @@ public sealed class EmailSenderService : IEmailService
 
             try
             {
-                _smtpClient.Connect(Configuration.AppSetting.MailSettings.Server,
-                                    Configuration.AppSetting.MailSettings.Port, true, cancellationToken);
-                
+                _smtpClient.Connect(_mailSetting.Server,_mailSetting.Port, true, cancellationToken);
                 _smtpClient.AuthenticationMechanisms.Remove("XOAUTH2");
-                
-                _smtpClient.Authenticate(Configuration.AppSetting.MailSettings.UserName,
-                                         Configuration.AppSetting.MailSettings.Password,
-                                         cancellationToken);
-                
+                _smtpClient.Authenticate(_mailSetting.UserName,_mailSetting.Password,cancellationToken);
                 _smtpClient.Send(mailMessage,cancellationToken);
             }
             catch
