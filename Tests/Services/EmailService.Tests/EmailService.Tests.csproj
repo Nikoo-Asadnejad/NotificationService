@@ -26,4 +26,13 @@
       <ProjectReference Include="..\..\..\src\Services\EmailService\EmailService.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="appsettings.test.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="appsettings.development.test.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

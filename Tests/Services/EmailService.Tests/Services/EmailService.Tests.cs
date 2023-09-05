@@ -6,6 +6,7 @@ using EmailService.Tests.TestData;
 using MailKit.Net.Smtp;
 using MassTransit;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using MimeKit;
 using Moq;
 
@@ -20,15 +21,21 @@ public sealed class EmailService_Tests
     public EmailService_Tests()
     {
         _smtpClientMoq = new Mock<ISmtpClient>();
-        _emailService = new EmailSenderService(_smtpClientMoq.Object);
+        Mock<IOptions<AppSetting>> configMoq = new Mock<IOptions<AppSetting>>();
+        
         IConfiguration config = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile(@"appsettings.json", false, false)
+            .AddJsonFile(@$"appsettings{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.test.json", false, false)
             .AddEnvironmentVariables()
             .Build();
-        
-        config.GetSection("MailSettings").Bind(Configuration.AppSetting);
-        _mailSettings = Configuration.AppSetting.MailSettings;
+
+        AppSetting appSetting = new();
+        config.Bind(appSetting);
+
+        configMoq.Setup(c=> c.Value).Returns(appSetting);
+        _emailService = new EmailSenderService(_smtpClientMoq.Object, configMoq.Object);
+       
+        _mailSettings = appSetting.MailSettings;
     }
 
     [Fact]
@@ -43,8 +50,8 @@ public sealed class EmailService_Tests
     public async Task SendAsync_RequestModelReceptorMailIsNull_ThrowArgumentException(SendEmailRequest request)
     {
         var sendMethod = async () => await _emailService.SendAsync(request);
-        var ex = await Assert.ThrowsAsync<ArgumentException>(sendMethod);
-        Assert.True(ex.Message.Contains("Receptor"));
+        var exception = await Assert.ThrowsAsync<ArgumentException>(sendMethod);
+        Assert.Contains("Receptor",exception.Message);
     }
 
     [Theory]
@@ -52,8 +59,8 @@ public sealed class EmailService_Tests
     public async Task SendAsync_RequestModelBodyIsNull_ThrowArgumentException(SendEmailRequest request)
     {
         var sendMethod = async () => await _emailService.SendAsync(request);
-        var ex = await Assert.ThrowsAsync<ArgumentException>(sendMethod);
-        Assert.True(ex.Message.Contains("Body"));
+        var exception = await Assert.ThrowsAsync<ArgumentException>(sendMethod);
+        Assert.Contains("Body" , exception.Message);
     }
 
     [Fact]
@@ -61,8 +68,7 @@ public sealed class EmailService_Tests
     {
         SendEmailRequest request = TestDataGenerator.CreateSampleRequest();
         await _emailService.SendAsync(request);
-        _smtpClientMoq.Verify(s =>
-            s.ConnectAsync(_mailSettings.Server, _mailSettings.Port, true, It.IsAny<CancellationToken>()));
+        _smtpClientMoq.Verify(s =>s.ConnectAsync(_mailSettings.Server, _mailSettings.Port, true, It.IsAny<CancellationToken>()));
     }
     
     
@@ -71,19 +77,22 @@ public sealed class EmailService_Tests
     {
         SendEmailRequest request = TestDataGenerator.CreateSampleRequest();
         await _emailService.SendAsync(request);
-        _smtpClientMoq.Verify(s =>
-            s.Authenticate( _mailSettings.UserName, _mailSettings.Password, It.IsAny<CancellationToken>()));
+        _smtpClientMoq.Verify(s => s.AuthenticateAsync( _mailSettings.UserName, _mailSettings.Password, It.IsAny<CancellationToken>()));
     }
 
-    // [Fact]
-    // public async Task SendAsync_WhenCalled_SmtpClientShouldSend()
-    // {
-    //     SendEmailRequest request = TestDataGenerator.CreateSampleRequest();
-    //     await _emailService.SendAsync(request);
-    //     _smtpClientMoq.Verify(s => s.SendAsync(
-    //         It.Is<MimeMessage>(m =>
-    //                                      m.Subject.Equals(request.Subject) && m.To.Mailboxes.Any(m => m.Address.Equals(request.ReceptorMail) && m.Name.Equals(request.ReceptorName)))),
-    //         It.IsAny<CancellationToken>(),
-    //         null));
-    // }
+    [Fact]
+    public async Task SendAsync_WhenCalled_SmtpClientShouldSend()
+    {
+        SendEmailRequest request = TestDataGenerator.CreateSampleRequest();
+        await _emailService.SendAsync(request);
+        _smtpClientMoq.Verify(s=> s.SendAsync(null,It.IsAny<MimeMessage>(),It.IsAny<CancellationToken>(),null));
+    }
+    
+    [Fact]
+    public async Task SendAsync_WhenCalled_SmtpClientShouldDisconnect()
+    {
+        SendEmailRequest request = TestDataGenerator.CreateSampleRequest();
+        await _emailService.SendAsync(request);
+        _smtpClientMoq.Verify(s=> s.DisconnectAsync(true,It.IsAny<CancellationToken>()));
+    }
 }
