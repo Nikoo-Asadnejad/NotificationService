@@ -7,5 +7,6 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dde5abf6_002Db44a_002D4a6d_002D8692_002Df5eb20189c1d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SendAsync_RequestModelIsNull_ThrowArgumentNullException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::9BD9399D-4EB4-4D10-BB61-37076DC8004B::net7.0::EmailService.Tests.Services.EmailService_Tests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::9BD9399D-4EB4-4D10-BB61-37076DC8004B::net7.0::EmailService.Tests.Consumers.EmailConsumerTests.Consume_ContextIsNull_ThrowsArgumentNullException&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
