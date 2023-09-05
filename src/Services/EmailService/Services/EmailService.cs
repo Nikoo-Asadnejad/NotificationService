@@ -51,7 +51,7 @@ public sealed class EmailSenderService : IEmailService
                 _smtpClient.Connect(_mailSetting.Server,_mailSetting.Port, true, cancellationToken);
                 //_smtpClient.AuthenticationMechanisms.Remove("XOAUTH2");
                 _smtpClient.Authenticate(_mailSetting.UserName,_mailSetting.Password,cancellationToken);
-                _smtpClient.Send(null,mailMessage,cancellationToken,null);
+                _smtpClient.Send(null, mailMessage,cancellationToken,null);
             }
             catch
             {
