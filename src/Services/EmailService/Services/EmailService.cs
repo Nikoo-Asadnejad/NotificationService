@@ -29,7 +29,7 @@ public sealed class EmailSenderService : IEmailService
             throw new ArgumentException("Body can't be null");
 
         var emailMessage = CreateEmailMessage(message);
-        Send(emailMessage);
+        await Send(emailMessage);
     }
 
     private MimeMessage CreateEmailMessage(SendEmailRequest message)
@@ -42,16 +42,16 @@ public sealed class EmailSenderService : IEmailService
         return emailMessage;
     }
 
-    private void Send(MimeMessage mailMessage , CancellationToken cancellationToken = new CancellationToken())
+    private async Task Send(MimeMessage mailMessage , CancellationToken cancellationToken = new CancellationToken())
     {
         using (_smtpClient)
 
             try
             {
-                _smtpClient.Connect(_mailSetting.Server,_mailSetting.Port, true, cancellationToken);
+                await _smtpClient.ConnectAsync(_mailSetting.Server,_mailSetting.Port, true, cancellationToken);
                 //_smtpClient.AuthenticationMechanisms.Remove("XOAUTH2");
-                _smtpClient.Authenticate(_mailSetting.UserName,_mailSetting.Password,cancellationToken);
-                _smtpClient.Send(null, mailMessage,cancellationToken,null);
+                await _smtpClient.AuthenticateAsync(_mailSetting.UserName,_mailSetting.Password,cancellationToken);
+                await _smtpClient.SendAsync(null, mailMessage,cancellationToken,null);
             }
             catch
             {
@@ -60,7 +60,7 @@ public sealed class EmailSenderService : IEmailService
             }
             finally
             {
-                _smtpClient.Disconnect(true);
+               await  _smtpClient.DisconnectAsync(true);
                 _smtpClient.Dispose();
             }
     }
