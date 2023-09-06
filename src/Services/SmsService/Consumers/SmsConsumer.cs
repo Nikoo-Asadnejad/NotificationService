@@ -13,6 +13,6 @@ public class SmsConsumer : IConsumer<SendSmsRequest>
     }
     public async Task Consume(ConsumeContext<SendSmsRequest> context )
     {
-        await _smsService.SendSmsAsync(context.Message);
+        await _smsService.SendAsync(context.Message);
     }
 }

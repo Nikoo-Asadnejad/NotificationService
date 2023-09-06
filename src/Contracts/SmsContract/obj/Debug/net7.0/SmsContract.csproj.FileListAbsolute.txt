@@ -1,0 +1,12 @@
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/bin/Debug/net7.0/SmsContract.deps.json
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/bin/Debug/net7.0/SmsContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/bin/Debug/net7.0/SmsContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/Debug/net7.0/SmsContract.csproj.AssemblyReference.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/Debug/net7.0/SmsContract.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/Debug/net7.0/SmsContract.AssemblyInfoInputs.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/Debug/net7.0/SmsContract.AssemblyInfo.cs
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/Debug/net7.0/SmsContract.csproj.CoreCompileInputs.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/Debug/net7.0/SmsContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/Debug/net7.0/refint/SmsContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/Debug/net7.0/SmsContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/obj/Debug/net7.0/ref/SmsContract.dll

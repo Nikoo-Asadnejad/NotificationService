@@ -11,7 +11,7 @@ public static class Configurator
 {
     public static void InjectService(this IServiceCollection services , IConfiguration configuration)
     {
-        services.AddScoped<ISmsService, Services.SmsService>();
+        services.AddScoped<ISmsService,SendSmsService>();
         services.AddTransient<Func<Provider, ISmsProvider>>(servideProvider => provider =>
         provider switch
             {
