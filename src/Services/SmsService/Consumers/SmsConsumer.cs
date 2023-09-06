@@ -4,7 +4,7 @@ using SmsService.Interfaces;
 
 namespace SmsService.Consumers;
 
-public class SmsConsumer : IConsumer<SendSmsRequest>
+public sealed class SmsConsumer : IConsumer<SendSmsRequest>
 {
     private readonly ISmsService _smsService;
     public SmsConsumer(ISmsService smsService)
@@ -13,6 +13,9 @@ public class SmsConsumer : IConsumer<SendSmsRequest>
     }
     public async Task Consume(ConsumeContext<SendSmsRequest> context )
     {
+        if(context is null || context.Message is null)
+            return;
+        
         await _smsService.SendAsync(context.Message);
     }
 }
