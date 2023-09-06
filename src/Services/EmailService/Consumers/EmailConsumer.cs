@@ -4,7 +4,7 @@ using MassTransit;
 
 namespace EmailService.Consumers;
 
-public class EmailConsumer : IConsumer<SendEmailRequest>
+public sealed class EmailConsumer : IConsumer<SendEmailRequest>
 {
     private readonly IEmailService _emailService;
     public EmailConsumer(IEmailService emailService) : base()
@@ -15,7 +15,6 @@ public class EmailConsumer : IConsumer<SendEmailRequest>
     {
         if (context is null)
             return;
-        
         await _emailService.SendAsync(context.Message);
     }
 }
