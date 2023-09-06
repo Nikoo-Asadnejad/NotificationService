@@ -16,7 +16,7 @@ public static class Configurator
         provider switch
             {
                 Provider.Kavenegar => servideProvider.GetService<KaveNegarProvider>(),
-                _ => new KaveNegarProvider(),
+                _ => servideProvider.GetService<KaveNegarProvider>(),
             });
         
         var appSetting = new AppSetting();

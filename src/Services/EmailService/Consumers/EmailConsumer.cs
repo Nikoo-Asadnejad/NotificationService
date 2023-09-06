@@ -14,7 +14,7 @@ public class EmailConsumer : IConsumer<SendEmailRequest>
     public async Task Consume(ConsumeContext<SendEmailRequest> context)
     {
         if (context is null)
-            throw new ArgumentNullException();
+            return;
         
         await _emailService.SendAsync(context.Message);
     }

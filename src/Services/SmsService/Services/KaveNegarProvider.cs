@@ -2,6 +2,7 @@ using System.Net;
 using Kavenegar;
 using Kavenegar.Core.Exceptions;
 using Kavenegar.Core.Models;
+using Microsoft.Extensions.Options;
 using ResponseBase.Dtos;
 using SmsService.Configurations;
 using SmsService.Interfaces;
@@ -15,9 +16,9 @@ public sealed class KaveNegarProvider : ISmsProvider
     private KavenegarApi _kaveNegarApi;
     private readonly ProviderSetting _providerSettings;
 
-    public KaveNegarProvider()
+    public KaveNegarProvider(IOptions<AppSetting> appsettings)
     { 
-        _providerSettings = Configuration.AppSetting.Providers.FirstOrDefault(p => p.Type is Provider.Kavenegar);
+        _providerSettings = appsettings.Value.Providers.FirstOrDefault(p => p.Type is Provider.Kavenegar);
         _kaveNegarApi = new KavenegarApi(_providerSettings.ApiKey);
     }
     public async Task<ResponseBase<SendSmsResponse>> SendAsync(SendSmsRequest request)
