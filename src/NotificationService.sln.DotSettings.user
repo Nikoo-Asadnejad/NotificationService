@@ -1,11 +1,11 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3d53b640_002Df33b_002D494f_002Dabe1_002Dd6a1e8f691e1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SendAsync_RequestModelIsNull_ThrowArgumentNullException #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3d53b640_002Df33b_002D494f_002Dabe1_002Dd6a1e8f691e1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SendAsync_RequestModelIsNull_ThrowArgumentNullException #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::9BD9399D-4EB4-4D10-BB61-37076DC8004B::net7.0::EmailService.Tests.Services.EmailService_Tests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::11744C85-2273-4CEF-8EE0-83625889E3D2::net7.0::SmsServiceTests.Services.SmsService_Tests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dde5abf6_002Db44a_002D4a6d_002D8692_002Df5eb20189c1d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SendAsync_RequestModelIsNull_ThrowArgumentNullException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dde5abf6_002Db44a_002D4a6d_002D8692_002Df5eb20189c1d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SendAsync_RequestModelIsNull_ThrowArgumentNullException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::9BD9399D-4EB4-4D10-BB61-37076DC8004B::net7.0::EmailService.Tests.Services.EmailService_Tests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::9BD9399D-4EB4-4D10-BB61-37076DC8004B::net7.0::EmailService.Tests.Consumers.EmailConsumerTests.Consume_ContextIsNull_ThrowsArgumentNullException&lt;/TestId&gt;
