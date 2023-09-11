@@ -475,6 +475,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "PushNotificationContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/PushNotificationContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PushNotificationContracts.dll": {}
+        }
       }
     }
   },
@@ -1501,6 +1511,11 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "PushNotificationContracts/1.0.0": {
+      "type": "project",
+      "path": "../../Contracts/PushNotificationContracts/PushNotificationContracts.csproj",
+      "msbuildProject": "../../Contracts/PushNotificationContracts/PushNotificationContracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1509,6 +1524,7 @@
       "MassTransit.AspNetCore >= 7.3.1",
       "MassTransit.RabbitMQ >= 8.1.1-develop.1522",
       "Microsoft.AspNetCore.OpenApi >= 7.0.1",
+      "PushNotificationContracts >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -1536,7 +1552,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj": {
+              "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
