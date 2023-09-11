@@ -9,6 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
         <PackageReference Include="Moq" Version="4.20.69" />
         <PackageReference Include="xunit" Version="2.4.2" />
@@ -23,16 +24,15 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\src\Services\EmailService\EmailService.csproj" />
+      <Content Update="appsettings.Development.test.json">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="appsettings.test.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="appsettings.Development.test.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
+      <ProjectReference Include="..\..\..\src\Services\SmsService\SmsService.csproj" />
     </ItemGroup>
 
 </Project>

@@ -31,10 +31,9 @@ public sealed class EmailService_Tests
 
         AppSetting appSetting = new();
         config.Bind(appSetting);
-
         configMoq.Setup(c=> c.Value).Returns(appSetting);
+        
         _emailService = new EmailSenderService(_smtpClientMoq.Object, configMoq.Object);
-       
         _mailSettings = appSetting.MailSettings;
     }
 
