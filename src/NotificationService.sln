@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailContract", "Contracts\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AA3BA638-D657-4755-841C-618B0E37232A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushService", "Services\PushService\PushService.csproj", "{DE612F92-FD20-48D2-9407-A90198BF9827}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotificationService", "Services\PushNotificationService\PushNotificationService.csproj", "{DE612F92-FD20-48D2-9407-A90198BF9827}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{75E2ED49-09B4-4B89-9767-0AE9236050D7}"
 EndProject

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y6a00M43GOBP3b6GqSpZ8mqMkNgorE9Po9fWg2mkNc5Zrt4jzpBMxgonMNyYnz+OhHfzjdKlqTyho6JcihfJEg==",
+  "dgSpecHash": "apNKP3fVrjKXixGdd5gRNznGBwtUbr1jCRsG/vSja0Nr67hF3mfE8YEXrF8wk7iQupIwUTM8gzgZBBF+RhxtdA==",
   "success": true,
-  "projectFilePath": "/Users/macbook/Projects/NotificationService/src/Services/PushService/PushService.csproj",
+  "projectFilePath": "/Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/PushNotificationService.csproj",
   "expectedPackageFiles": [
     "/Users/macbook/.nuget/packages/masstransit/8.1.1-develop.1522/masstransit.8.1.1-develop.1522.nupkg.sha512",
     "/Users/macbook/.nuget/packages/masstransit.abstractions/8.1.1-develop.1522/masstransit.abstractions.8.1.1-develop.1522.nupkg.sha512",

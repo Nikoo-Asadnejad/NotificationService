@@ -1,4 +1,4 @@
-namespace PushService.Configurations;
+namespace PushNotificationService.Configurations;
 
 public struct Configuration
 {

@@ -1518,11 +1518,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Projects/NotificationService/src/Services/PushService/PushService.csproj",
-      "projectName": "PushService",
-      "projectPath": "/Users/macbook/Projects/NotificationService/src/Services/PushService/PushService.csproj",
+      "projectUniqueName": "/Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/PushNotificationService.csproj",
+      "projectName": "PushNotificationService",
+      "projectPath": "/Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/PushNotificationService.csproj",
       "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Projects/NotificationService/src/Services/PushService/obj/",
+      "outputPath": "/Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/macbook/.nuget/NuGet/NuGet.Config"

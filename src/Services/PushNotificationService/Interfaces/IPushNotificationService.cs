@@ -1,4 +1,4 @@
-namespace PushService.Interfaces;
+namespace PushNotificationService.Interfaces;
 
 public interface IPushNotificationService
 {

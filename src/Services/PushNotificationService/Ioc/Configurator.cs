@@ -1,7 +1,7 @@
 using MassTransit;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
-namespace PushService.Configurations;
+namespace PushNotificationService.Configurations;
 
 public static class SmsConfigurator
 {
