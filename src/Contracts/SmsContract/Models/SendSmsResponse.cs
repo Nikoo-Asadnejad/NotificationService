@@ -1,3 +1,3 @@
 namespace SmsContract.Models;
 
-public record SendSmsResponse(string providesStatus);
+public sealed record SendSmsResponse(string providesStatus);
