@@ -23,15 +23,7 @@ public sealed class KaveNegarProvider : ISmsProvider
     {
         try
         {
-            if (request is null)
-                throw new ArgumentNullException();
 
-            if (string.IsNullOrWhiteSpace(request.receptorPhoneNumber))
-                throw new ArgumentException("Receptor phone number cannot be null");
-            
-            if(string.IsNullOrWhiteSpace(request.message))
-                throw new ArgumentException("Message cannot be null");
-            
             SendResult sendSmsResult = await _kaveNegarApi.Send(sender: _providerSettings.SenderUrl,
                 receptor: request.receptorPhoneNumber,
                 message: request.message);
