@@ -1,2 +1,2 @@
 # NotificationService
-A Service for sending notifications including sms, email and push notifcations. implemened by rabbitmq.
+A Service for sending notifications including 3 micro services for sending email,sms and push notifications, implemented by rabbitmq.
