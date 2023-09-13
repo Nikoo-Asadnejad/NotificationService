@@ -26,6 +26,9 @@ jobs:
     - name: Build
       working-directory: src
       run: dotnet build --no-restore
+  test:   
+    runs-on: ubuntu-latest
+    steps:
     - name: Test
       working-directory: src
       run: dotnet test --no-build --verbosity normal
