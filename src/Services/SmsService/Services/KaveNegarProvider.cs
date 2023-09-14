@@ -25,8 +25,8 @@ public sealed class KaveNegarProvider : ISmsProvider
         {
 
             SendResult sendSmsResult = await _kaveNegarApi.Send(sender: _providerSettings.SenderUrl,
-                receptor: request.receptorPhoneNumber,
-                message: request.message);
+                receptor: request.ReceptorPhoneNumber,
+                message: request.Message);
 
             return new SendSmsResponse(sendSmsResult.StatusText);
         }

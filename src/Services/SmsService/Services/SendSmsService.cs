@@ -17,10 +17,10 @@ public sealed class SendSmsService : ISmsService
         if (request is null)
             throw new ArgumentNullException();
 
-        if (string.IsNullOrWhiteSpace(request.receptorPhoneNumber))
+        if (string.IsNullOrWhiteSpace(request.ReceptorPhoneNumber))
             throw new ArgumentException("Receptor phone number cannot be null");
             
-        if(string.IsNullOrWhiteSpace(request.message))
+        if(string.IsNullOrWhiteSpace(request.Message))
             throw new ArgumentException("Message cannot be null");
         
         return request.Provider switch
