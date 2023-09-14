@@ -1,4 +1,4 @@
-using PushNotificationContracts.Models;
+using PushNotificationContract.Models;
 
 namespace PushNotificationService.Interfaces;
 

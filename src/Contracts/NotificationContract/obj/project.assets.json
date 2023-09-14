@@ -126,14 +126,14 @@
           "bin/placeholder/EmailContract.dll": {}
         }
       },
-      "PushNotificationContracts/1.0.0": {
+      "PushNotificationContract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/PushNotificationContracts.dll": {}
+          "bin/placeholder/PushNotificationContract.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PushNotificationContracts.dll": {}
+          "bin/placeholder/PushNotificationContract.dll": {}
         }
       },
       "SmsContract/1.0.0": {
@@ -332,10 +332,10 @@
       "path": "../EmailContract/EmailContract.csproj",
       "msbuildProject": "../EmailContract/EmailContract.csproj"
     },
-    "PushNotificationContracts/1.0.0": {
+    "PushNotificationContract/1.0.0": {
       "type": "project",
-      "path": "../PushNotificationContracts/PushNotificationContracts.csproj",
-      "msbuildProject": "../PushNotificationContracts/PushNotificationContracts.csproj"
+      "path": "../PushNotificationContract/PushNotificationContract.csproj",
+      "msbuildProject": "../PushNotificationContract/PushNotificationContract.csproj"
     },
     "SmsContract/1.0.0": {
       "type": "project",
@@ -346,7 +346,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "EmailContract >= 1.0.0",
-      "PushNotificationContracts >= 1.0.0",
+      "PushNotificationContract >= 1.0.0",
       "SmsContract >= 1.0.0"
     ]
   },
@@ -378,8 +378,8 @@
             "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj": {
               "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj"
             },
-            "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj": {
-              "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj"
+            "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj": {
+              "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj"
             },
             "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj": {
               "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj"

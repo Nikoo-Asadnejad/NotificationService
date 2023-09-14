@@ -24,11 +24,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService.Tests", "..\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsService.Tests", "..\Tests\Services\SmsService.Tests\SmsService.Tests.csproj", "{11744C85-2273-4CEF-8EE0-83625889E3D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotificationContracts", "Contracts\PushNotificationContracts\PushNotificationContracts.csproj", "{858F4302-ECAC-4E3F-873F-E53C8D8D727A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotificationContract", "Contracts\PushNotificationContract\PushNotificationContract.csproj", "{858F4302-ECAC-4E3F-873F-E53C8D8D727A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotification.Tests", "..\Tests\Services\PushNotification.Tests\PushNotification.Tests.csproj", "{777F79D5-C31A-4B86-A631-FBEE62D5C731}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationContract", "Contracts\NotificationContract\NotificationContract.csproj", "{0419E9B3-97CF-4760-8866-F875239772C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{DF6F1FF2-F23C-422B-B04E-125C49ACAFB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,5 +93,6 @@ Global
 		{858F4302-ECAC-4E3F-873F-E53C8D8D727A} = {95B6255C-B93D-478E-AD3D-A191BCE237FF}
 		{777F79D5-C31A-4B86-A631-FBEE62D5C731} = {B6DF7FAF-A9B5-4DBF-BC25-85DF8AED772C}
 		{0419E9B3-97CF-4760-8866-F875239772C3} = {95B6255C-B93D-478E-AD3D-A191BCE237FF}
+		{DF6F1FF2-F23C-422B-B04E-125C49ACAFB6} = {D8F0B90B-1D73-4EEF-B9A9-1E23CA1FE502}
 	EndGlobalSection
 EndGlobal

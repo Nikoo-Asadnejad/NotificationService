@@ -1,5 +1,5 @@
 using FirebaseAdmin.Messaging;
-using PushNotificationContracts.Models;
+using PushNotificationContract.Models;
 using PushNotificationService.Interfaces;
 using PushNotificationService.Tools;
 

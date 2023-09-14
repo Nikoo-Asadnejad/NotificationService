@@ -26,7 +26,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Contracts\PushNotificationContracts\PushNotificationContracts.csproj" />
+      <ProjectReference Include="..\..\Contracts\PushNotificationContract\PushNotificationContract.csproj" />
     </ItemGroup>
 
 </Project>

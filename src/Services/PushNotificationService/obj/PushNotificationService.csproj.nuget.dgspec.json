@@ -4,14 +4,14 @@
     "/Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/PushNotificationService.csproj": {}
   },
   "projects": {
-    "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj": {
+    "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj",
-        "projectName": "PushNotificationContracts",
-        "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj",
+        "projectUniqueName": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj",
+        "projectName": "PushNotificationContract",
+        "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj",
         "packagesPath": "/Users/macbook/.nuget/packages/",
-        "outputPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/obj/",
+        "outputPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/macbook/.nuget/NuGet/NuGet.Config"
@@ -79,8 +79,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj": {
-                "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj"
+              "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj": {
+                "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj"
               }
             }
           }

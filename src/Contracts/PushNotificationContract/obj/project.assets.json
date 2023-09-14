@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj",
-      "projectName": "PushNotificationContracts",
-      "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj",
+      "projectUniqueName": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj",
+      "projectName": "PushNotificationContract",
+      "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj",
       "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/obj/",
+      "outputPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/macbook/.nuget/NuGet/NuGet.Config"

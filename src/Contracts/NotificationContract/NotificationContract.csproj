@@ -8,7 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\EmailContract\EmailContract.csproj" />
-      <ProjectReference Include="..\PushNotificationContracts\PushNotificationContracts.csproj" />
+      <ProjectReference Include="..\PushNotificationContract\PushNotificationContract.csproj" />
       <ProjectReference Include="..\SmsContract\SmsContract.csproj" />
     </ItemGroup>
 
