@@ -20,7 +20,5 @@ public sealed class PushNotificationService : IPushNotificationService
         
         Message message = request.MapToFireBaseMessage();
         await FirebaseMessaging.DefaultInstance.SendAsync(message);
-        
-
     }
 }
