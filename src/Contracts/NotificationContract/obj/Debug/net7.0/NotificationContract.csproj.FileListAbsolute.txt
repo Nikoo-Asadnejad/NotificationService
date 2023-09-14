@@ -1,0 +1,17 @@
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/bin/Debug/net7.0/NotificationContract.deps.json
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/bin/Debug/net7.0/NotificationContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/bin/Debug/net7.0/NotificationContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/bin/Debug/net7.0/EmailContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/bin/Debug/net7.0/SmsContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/bin/Debug/net7.0/EmailContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/bin/Debug/net7.0/SmsContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/NotificationContract.csproj.AssemblyReference.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/NotificationContract.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/NotificationContract.AssemblyInfoInputs.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/NotificationContract.AssemblyInfo.cs
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/NotificationContract.csproj.CoreCompileInputs.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/NotificationContract.csproj.CopyComplete
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/NotificationContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/refint/NotificationContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/NotificationContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/ref/NotificationContract.dll

@@ -4,7 +4,7 @@ using SmsContract.Models;
 
 namespace NotificationContract.Models;
 
-public record SendNotificationRequest
+public sealed record SendNotificationRequest
 {
     public string? Title { get; }
     public string? ReceptorName { get;  }
@@ -30,7 +30,6 @@ public record SendNotificationRequest
         SendEmailRequest emailRequest = new(notification.Email,notification.ReceptorName, notification.Title, notification.Message);
         return emailRequest;
     }
-
     public static explicit operator SendSmsRequest(SendNotificationRequest notification)
     {
         if (notification.PhoneNumber is null)

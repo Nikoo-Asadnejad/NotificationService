@@ -1,3 +1,3 @@
 namespace PushNotificationContracts.Models;
 
-public sealed record SendPushMessageRequest(string Title , string Message, string DeviceToken);
+public sealed record SendPushMessageRequest(string DeviceToken,string Title , string Message);
