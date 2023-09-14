@@ -7,12 +7,12 @@ namespace NotificationContract.Models;
 
 public sealed record SendNotificationRequest
 {
-    public string? Title { get; }
-    public string? ReceptorName { get;  }
-    public  string Message { get; }
-    public string? Email { get; }
-    public string? PhoneNumber { get;  }
-    public string? DeviceToken { get; }
+    public string? Title { get;  set; }
+    public string? ReceptorName { get;  set; }
+    public  string Message { get;  set;}
+    public string? Email { get; set;}
+    public string? PhoneNumber { get; set; }
+    public string? DeviceToken { get; set;}
 
     public static explicit operator SendEmailRequest(SendNotificationRequest notification)
     {
