@@ -126,6 +126,16 @@
           "bin/placeholder/EmailContract.dll": {}
         }
       },
+      "PushNotificationContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/PushNotificationContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PushNotificationContracts.dll": {}
+        }
+      },
       "SmsContract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -322,6 +332,11 @@
       "path": "../EmailContract/EmailContract.csproj",
       "msbuildProject": "../EmailContract/EmailContract.csproj"
     },
+    "PushNotificationContracts/1.0.0": {
+      "type": "project",
+      "path": "../PushNotificationContracts/PushNotificationContracts.csproj",
+      "msbuildProject": "../PushNotificationContracts/PushNotificationContracts.csproj"
+    },
     "SmsContract/1.0.0": {
       "type": "project",
       "path": "../SmsContract/SmsContract.csproj",
@@ -331,6 +346,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "EmailContract >= 1.0.0",
+      "PushNotificationContracts >= 1.0.0",
       "SmsContract >= 1.0.0"
     ]
   },
@@ -361,6 +377,9 @@
           "projectReferences": {
             "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj": {
               "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/EmailContract/EmailContract.csproj"
+            },
+            "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj": {
+              "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContracts/PushNotificationContracts.csproj"
             },
             "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj": {
               "projectPath": "/Users/macbook/Projects/NotificationService/src/Contracts/SmsContract/SmsContract.csproj"

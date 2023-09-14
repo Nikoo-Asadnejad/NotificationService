@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0TO1X4PXyJ7OGYUwPEr8R47kr8X67lW79TGApE1+0h436oavAPGz5GSJ/j/Fh4pmVrS3NDcWvvJCkeoTThMX/g==",
+  "dgSpecHash": "w+B7S5jQ7DiWXGPHx3nOdMiIEiQNN1NEkpcXUov0r0qIkl5dL7xTULFXRNb1kIY6vfZFB6z+S8rrHy4yErL1VQ==",
   "success": true,
   "projectFilePath": "/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/NotificationContract.csproj",
   "expectedPackageFiles": [
