@@ -31,6 +31,17 @@ public record SendNotificationRequest
         return emailRequest;
     }
 
+    public static explicit operator SendSmsRequest(SendNotificationRequest notification)
+    {
+        if (notification.PhoneNumber is null)
+            throw new ArgumentNullException("PhoneNumber",message:"For sending an sms, phoneNumber field shouldn't be null");
     
+        if (notification.Message is null)
+            throw new ArgumentNullException("Message",message:"For sending an sms, message field shouldn't be null");
+
+        SendSmsRequest smsRequest = new(notification.PhoneNumber, notification.Message);
+        return smsRequest;
+    }
+
     
 }
