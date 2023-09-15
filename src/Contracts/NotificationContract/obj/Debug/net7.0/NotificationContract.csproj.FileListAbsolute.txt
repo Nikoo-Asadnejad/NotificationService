@@ -15,3 +15,5 @@
 /Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/refint/NotificationContract.dll
 /Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/NotificationContract.pdb
 /Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/obj/Debug/net7.0/ref/NotificationContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/bin/Debug/net7.0/PushNotificationContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/NotificationContract/bin/Debug/net7.0/PushNotificationContract.pdb

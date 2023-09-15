@@ -9,6 +9,7 @@
       "NotificationContract/1.0.0": {
         "dependencies": {
           "EmailContract": "1.0.0",
+          "PushNotificationContract": "1.0.0",
           "SmsContract": "1.0.0"
         },
         "runtime": {
@@ -67,6 +68,11 @@
           "EmailContract.dll": {}
         }
       },
+      "PushNotificationContract/1.0.0": {
+        "runtime": {
+          "PushNotificationContract.dll": {}
+        }
+      },
       "SmsContract/1.0.0": {
         "runtime": {
           "SmsContract.dll": {}
@@ -123,6 +129,11 @@
       "hashPath": "system.text.encoding.codepages.7.0.0.nupkg.sha512"
     },
     "EmailContract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PushNotificationContract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

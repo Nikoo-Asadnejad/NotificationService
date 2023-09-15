@@ -1,0 +1,12 @@
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/bin/Debug/net7.0/PushNotificationContract.deps.json
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/bin/Debug/net7.0/PushNotificationContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/bin/Debug/net7.0/PushNotificationContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/Debug/net7.0/PushNotificationContract.csproj.AssemblyReference.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/Debug/net7.0/PushNotificationContract.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/Debug/net7.0/PushNotificationContract.AssemblyInfoInputs.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/Debug/net7.0/PushNotificationContract.AssemblyInfo.cs
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/Debug/net7.0/PushNotificationContract.csproj.CoreCompileInputs.cache
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/Debug/net7.0/PushNotificationContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/Debug/net7.0/refint/PushNotificationContract.dll
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/Debug/net7.0/PushNotificationContract.pdb
+/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/obj/Debug/net7.0/ref/PushNotificationContract.dll
