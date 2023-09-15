@@ -43,7 +43,6 @@ public static class TestDataGenerator
             }
         };
     }
-
     public static IEnumerable<object[]> GetRequestsWithNullDeviceToken()
     {
         yield return new object[]
@@ -83,7 +82,6 @@ public static class TestDataGenerator
             }
         };
     }
-
     public static IEnumerable<object[]> GetRequestsWithNullEmail()
     {
         yield return new object[]
@@ -123,7 +121,6 @@ public static class TestDataGenerator
             }
         };
     }
-
     public static IEnumerable<object[]> GetRequestsWithNullMessage()
     {
         yield return new object[]
@@ -163,7 +160,6 @@ public static class TestDataGenerator
             }
         };
     }
-
     public static IEnumerable<object[]> GetRequestsWithNullPhoneNumber()
     {
         yield return new object[]
@@ -203,7 +199,6 @@ public static class TestDataGenerator
             }
         };
     }
-
     public static IEnumerable<object[]> GetRequestsWithNullReceptorName()
     {
         yield return new object[]

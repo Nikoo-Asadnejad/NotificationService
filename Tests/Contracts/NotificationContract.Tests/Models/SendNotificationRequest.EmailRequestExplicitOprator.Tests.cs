@@ -1,3 +1,4 @@
+using EmailContract.Models;
 using NotificationContract.Models;
 using NotificationContract.Tests.TestData;
 using SmsContract.Models;
@@ -5,23 +6,41 @@ using Xunit.Sdk;
 
 namespace NotificationContract.Tests.Models;
 
-public sealed class SendNotificationRequest_SmsRequestExplicitOprator_Tests
+public sealed class SendNotificationRequest_EmailRequestExplicitOprator_Tests
 {
     [Theory]
-    [MemberData(nameof(TestDataGenerator.GetRequestsWithNullPhoneNumber),MemberType = typeof(TestDataGenerator))]
-    public async Task ConvertToSendSmsRequest_PhoneNumberIsNull_ThrowsArgumentNullException(SendNotificationRequest request)
+    [MemberData(nameof(TestDataGenerator.GetRequestsWithNullEmail),MemberType = typeof(TestDataGenerator))]
+    public async Task ConvertToSendSmsRequest_EmailIsNull_ThrowsArgumentNullException(SendNotificationRequest request)
     {
-        Func<SendSmsRequest> convertFunc = () => (SendSmsRequest)request;
+        Func<SendEmailRequest> convertFunc = () => (SendEmailRequest)request;
         var exception = Assert.Throws<ArgumentNullException>(convertFunc);
-        Assert.Contains("phoneNumber" ,exception.Message);
+        Assert.Contains("Email" ,exception.Message);
     }
     
     [Theory]
     [MemberData(nameof(TestDataGenerator.GetRequestsWithNullMessage),MemberType = typeof(TestDataGenerator))]
     public async Task ConvertToSendSmsRequest_MessageIsNull_ThrowsArgumentNullException(SendNotificationRequest request)
     {
-        Func<SendSmsRequest> convertFunc = () => (SendSmsRequest)request;
+        Func<SendEmailRequest> convertFunc = () => (SendEmailRequest)request;
         var exception = Assert.Throws<ArgumentNullException>(convertFunc);
-        Assert.Contains("message" ,exception.Message);
+        Assert.Contains("Message" ,exception.Message);
+    }
+    
+    [Theory]
+    [MemberData(nameof(TestDataGenerator.GetRequestsWithNullReceptorName),MemberType = typeof(TestDataGenerator))]
+    public async Task ConvertToSendSmsRequest_ReceptorNameIsNull_ThrowsArgumentNullException(SendNotificationRequest request)
+    {
+        Func<SendEmailRequest> convertFunc = () => (SendEmailRequest)request;
+        var exception = Assert.Throws<ArgumentNullException>(convertFunc);
+        Assert.Contains("ReceptorName" ,exception.Message);
+    }
+    
+    [Theory]
+    [MemberData(nameof(TestDataGenerator.GetRequestsWithNullTitle),MemberType = typeof(TestDataGenerator))]
+    public async Task ConvertToSendSmsRequest_TitleIsNull_ThrowsArgumentNullException(SendNotificationRequest request)
+    {
+        Func<SendEmailRequest> convertFunc = () => (SendEmailRequest)request;
+        var exception = Assert.Throws<ArgumentNullException>(convertFunc);
+        Assert.Contains("Title" ,exception.Message);
     }
 }
