@@ -4,6 +4,16 @@ namespace NotificationContract.Tests.TestData;
 
 public static class TestDataGenerator
 {
+    public static SendNotificationRequest CreateSampleRequest()
+        => new SendNotificationRequest
+        {
+            Title = "test",
+            ReceptorName = "nikoo",
+            Message = "test",
+            Email = "nikoo@gmail.com",
+            PhoneNumber = "09393801432",
+            DeviceToken = "jndckjsnj"
+        };
     public static IEnumerable<object[]> GetRequestsWithNullTitle()
     {
         yield return new object[]
