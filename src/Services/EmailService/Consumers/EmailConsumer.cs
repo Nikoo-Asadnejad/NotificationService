@@ -13,8 +13,6 @@ public sealed class EmailConsumer : IConsumer<SendEmailRequest>
     }
     public async Task Consume(ConsumeContext<SendEmailRequest> context)
     {
-        if (context is null)
-            return;
         await _emailService.SendAsync(context.Message);
     }
 }
