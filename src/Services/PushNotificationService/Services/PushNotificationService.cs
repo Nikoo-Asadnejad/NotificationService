@@ -1,7 +1,7 @@
 using FirebaseAdmin.Messaging;
 using PushNotificationContract.Models;
 using PushNotificationService.Interfaces;
-using PushNotificationService.Tools;
+
 
 namespace PushNotificationService.Services;
 
@@ -18,7 +18,7 @@ public sealed class PushNotificationService : IPushNotificationService
         if (string.IsNullOrWhiteSpace(request.DeviceToken))
             throw new ArgumentException("Device Token can't be null");
         
-        Message message = request.MapToFireBaseMessage();
+        Message message = (Message)request;
         await FirebaseMessaging.DefaultInstance.SendAsync(message);
     }
 }

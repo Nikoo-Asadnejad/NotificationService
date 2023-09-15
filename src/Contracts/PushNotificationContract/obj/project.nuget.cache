@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "XeKrNYKh5p0F6D84Yp+PLomaL06oldOkAh9WX/fyt0jIucQuN+eyC5XntnmePyaIUIy9+MaI+5Dg5dbs7QjgAQ==",
+  "dgSpecHash": "sZV9V132u6U9nlD/i5aJ1LHz0s+dQ+gihSgjukFYOn+43e2sf//ybErJmEGRvwu9OkfgHZh3MqQEuESFmmYVeA==",
   "success": true,
   "projectFilePath": "/Users/macbook/Projects/NotificationService/src/Contracts/PushNotificationContract/PushNotificationContract.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/macbook/.nuget/packages/firebaseadmin/2.4.0/firebaseadmin.2.4.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/google.api.gax/3.2.0/google.api.gax.3.2.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/google.api.gax.rest/3.2.0/google.api.gax.rest.3.2.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/google.apis/1.49.0/google.apis.1.49.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/google.apis.auth/1.49.0/google.apis.auth.1.49.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/google.apis.core/1.49.0/google.apis.core.1.49.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/microsoft.bcl.asyncinterfaces/1.0.0/microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

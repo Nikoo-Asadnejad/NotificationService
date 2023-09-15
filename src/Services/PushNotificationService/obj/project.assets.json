@@ -619,6 +619,9 @@
       "PushNotificationContract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FirebaseAdmin": "2.4.0"
+        },
         "compile": {
           "bin/placeholder/PushNotificationContract.dll": {}
         },
