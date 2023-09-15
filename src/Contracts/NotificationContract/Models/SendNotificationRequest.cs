@@ -36,7 +36,7 @@ public sealed record SendNotificationRequest
         if (string.IsNullOrWhiteSpace(notification.PhoneNumber))
             throw new ArgumentNullException("PhoneNumber",message:"For sending a sms, phoneNumber field shouldn't be null");
     
-        if (string.IsNullOrWhiteSpace(notification.PhoneNumber))
+        if (string.IsNullOrWhiteSpace(notification.Message))
             throw new ArgumentNullException("Message",message:"For sending a sms, message field shouldn't be null");
 
         SendSmsRequest smsRequest = new(notification.PhoneNumber, notification.Message);
