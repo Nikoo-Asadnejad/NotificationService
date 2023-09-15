@@ -20,7 +20,7 @@ public sealed class EmailSenderService : IEmailService
     public async Task SendAsync(SendEmailRequest message)
     {
         if (message is null)
-            throw new ArgumentNullException("message");
+            throw new ArgumentNullException(nameof(message));
 
         if (string.IsNullOrWhiteSpace(message.ReceptorMail))
             throw new ArgumentException("ReceptorMail can't be null");
@@ -49,7 +49,6 @@ public sealed class EmailSenderService : IEmailService
             try
             {
                 await _smtpClient.ConnectAsync(_mailSetting.Server,_mailSetting.Port, true, cancellationToken);
-                //_smtpClient.AuthenticationMechanisms.Remove("XOAUTH2");
                 await _smtpClient.AuthenticateAsync(_mailSetting.UserName,_mailSetting.Password,cancellationToken);
                 await _smtpClient.SendAsync(null, mailMessage,cancellationToken,null);
             }
@@ -60,7 +59,7 @@ public sealed class EmailSenderService : IEmailService
             }
             finally
             {
-               await  _smtpClient.DisconnectAsync(true);
+                await _smtpClient.DisconnectAsync(true);
                 _smtpClient.Dispose();
             }
     }
