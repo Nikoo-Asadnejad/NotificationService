@@ -4,6 +4,7 @@
     &lt;TestAncestor&gt;
       &lt;TestId&gt;xUnit::9BD9399D-4EB4-4D10-BB61-37076DC8004B::net7.0::EmailService.Tests.Services.EmailService_Tests&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::11744C85-2273-4CEF-8EE0-83625889E3D2::net7.0::SmsServiceTests.Services.SmsService_Tests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_SmsRequestExplicitOprator_Tests.ConvertToSendSmsRequest_PhoneNumberIsNull_ThrowsArgumentNullException&lt;/TestId&gt;
     &lt;/TestAncestor&gt;
     &lt;Project Location="/Users/macbook/Projects/NotificationService/Tests/Services/SmsService.Tests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;Services&amp;gt;\&amp;lt;SmsService.Tests&amp;gt;" /&gt;
   &lt;/Or&gt;
