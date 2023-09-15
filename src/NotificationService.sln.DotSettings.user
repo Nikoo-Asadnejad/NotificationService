@@ -8,6 +8,7 @@
       &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_SmsRequestExplicitOprator_Tests.ConvertToSendSmsRequest_MessageIsNull_ThrowsArgumentNullException&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_EmailRequestExplicitOprator_Tests&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_PushMessageRequestExplicitOprator_Tests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_SmsRequestExplicitOprator_Tests.ConvertToSendSmsRequest_OnConvert_SendSmsRequestShouldBeFilledWithNotificationValues&lt;/TestId&gt;
     &lt;/TestAncestor&gt;
     &lt;Project Location="/Users/macbook/Projects/NotificationService/Tests/Services/SmsService.Tests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;Services&amp;gt;\&amp;lt;SmsService.Tests&amp;gt;" /&gt;
   &lt;/Or&gt;

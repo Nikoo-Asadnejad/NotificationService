@@ -39,7 +39,7 @@ public sealed class SendNotificationRequest_PushMessageRequestExplicitOprator_Te
     }
     
     [Fact]
-    public async Task ConvertToSendPushMessageRequest_OnConvert_PushMessageRequestShouldBeFilledWithNotificationValues()
+    public async Task ConvertToSendPushMessageRequest_OnConvert_SendPushMessageRequestShouldBeFilledWithNotificationValues()
     {
         SendNotificationRequest notificationRequest = TestDataGenerator.CreateSampleRequest();
 

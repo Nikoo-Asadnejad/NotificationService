@@ -46,7 +46,7 @@ public sealed class SendNotificationRequest_EmailRequestExplicitOprator_Tests
     }
 
     [Fact]
-    public async Task ConvertToSendEmailRequest_OnConvert_EmailRequestShouldBeFilledWithNotificationValues()
+    public async Task ConvertToSendEmailRequest_OnConvert_SendEmailRequestShouldBeFilledWithNotificationValues()
     {
         SendNotificationRequest notificationRequest = TestDataGenerator.CreateSampleRequest();
 
