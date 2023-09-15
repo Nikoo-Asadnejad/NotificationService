@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using EmailContract.Models;
 using PushNotificationContract.Models;
 using SmsContract.Models;

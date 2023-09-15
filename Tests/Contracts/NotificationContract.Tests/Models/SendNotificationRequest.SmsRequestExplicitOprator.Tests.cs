@@ -1,7 +1,6 @@
 using NotificationContract.Models;
 using NotificationContract.Tests.TestData;
 using SmsContract.Models;
-using Xunit.Sdk;
 
 namespace NotificationContract.Tests.Models;
 

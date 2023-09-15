@@ -1,6 +1,4 @@
-using MassTransit;
 using SmsService.Configurations;
-using SmsService.Consumers;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -2,9 +2,7 @@ using Kavenegar;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Moq;
-using SmsContract.Models;
 using SmsService.Configurations;
-using SmsService.Tests.TestData;
 
 
 namespace SmsService.Tests.Services;

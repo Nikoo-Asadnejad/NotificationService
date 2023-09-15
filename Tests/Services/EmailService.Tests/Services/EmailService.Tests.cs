@@ -4,7 +4,6 @@ using EmailService.Interfaces;
 using EmailService.Services;
 using EmailService.Tests.TestData;
 using MailKit.Net.Smtp;
-using MassTransit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using MimeKit;
