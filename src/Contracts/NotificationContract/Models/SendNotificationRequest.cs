@@ -1,4 +1,5 @@
 using EmailContract.Models;
+using NotificationContract.Enums;
 using PushNotificationContract.Models;
 using SmsContract.Models;
 
@@ -6,13 +7,14 @@ namespace NotificationContract.Models;
 
 public sealed record SendNotificationRequest
 {
+    public required NotificationType[] NotificationTypes { get; set; }
     public string? Title { get;  set; }
     public string? ReceptorName { get;  set; }
     public  string Message { get;  set;}
     public string? Email { get; set;}
     public string? PhoneNumber { get; set; }
     public string? DeviceToken { get; set;}
-
+    
     public static explicit operator SendEmailRequest(SendNotificationRequest notification)
     {
         if (string.IsNullOrWhiteSpace(notification.Email))
