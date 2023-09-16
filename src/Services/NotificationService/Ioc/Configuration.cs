@@ -4,12 +4,12 @@ namespace NotificationService.Ioc;
 
 public struct Configuration
 {
-    public AppSetting AppSetting { get; private set; }
-    public void SetUp(IConfiguration configuration)
+    public static AppSetting AppSetting { get; private set; }
+    public static void SetUp(IConfiguration configuration)
     {
         AppSetting appsetting = new();
         configuration.Bind(appsetting);
-        this.AppSetting = appsetting;
+        Configuration.AppSetting = appsetting;
     }
 }
 
