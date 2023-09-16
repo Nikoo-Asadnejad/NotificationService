@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using MassTransit;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
@@ -7,7 +8,11 @@ public static class Configurator
 {
     public static void InjectService(this IServiceCollection services , IConfiguration configuration)
     {
-        services.AddControllers();
+        services.AddControllers()
+            .AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            });
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddMassTransit(configurator =>
