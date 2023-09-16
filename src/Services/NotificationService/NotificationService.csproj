@@ -23,8 +23,6 @@
 
     <ItemGroup>
       <Folder Include="Consumers" />
-      <Folder Include="Interfaces" />
-      <Folder Include="Services" />
     </ItemGroup>
 
     <ItemGroup>
