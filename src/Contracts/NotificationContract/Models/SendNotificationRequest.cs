@@ -17,6 +17,9 @@ public sealed record SendNotificationRequest
     
     public static explicit operator SendEmailRequest(SendNotificationRequest notification)
     {
+        if (!notification.NotificationTypes.Contains(NotificationType.Email))
+            throw new Exception("This type can't be converted to emailRequest");
+        
         if (string.IsNullOrWhiteSpace(notification.Email))
             throw new ArgumentNullException("Email",message:"For sending an email, email field shouldn't be null");
         
@@ -34,6 +37,9 @@ public sealed record SendNotificationRequest
     }
     public static explicit operator SendSmsRequest(SendNotificationRequest notification)
     {
+        if (!notification.NotificationTypes.Contains(NotificationType.Sms))
+            throw new Exception("This type can't be converted to smsRequest");
+        
         if (string.IsNullOrWhiteSpace(notification.PhoneNumber))
             throw new ArgumentNullException("PhoneNumber",message:"For sending a sms, phoneNumber field shouldn't be null");
     
@@ -45,6 +51,9 @@ public sealed record SendNotificationRequest
     }
     public static explicit operator SendPushMessageRequest(SendNotificationRequest notification)
     {
+        if (!notification.NotificationTypes.Contains(NotificationType.PushMessage))
+            throw new Exception("This type can't be converted to pushMessageRequest");
+        
         if (string.IsNullOrWhiteSpace(notification.DeviceToken))
             throw new ArgumentNullException("DeviceToken",message:"For sending a push message, deviceToken field shouldn't be null");
     
