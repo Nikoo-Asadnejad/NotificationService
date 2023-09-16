@@ -38,6 +38,18 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.1.1-develop.1541, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.1.1-develop.1541, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.1, )"
