@@ -26,15 +26,7 @@ public static class Configurator
             app.UseSwaggerUI();
         }
 
-        app.UseHttpsRedirection();
-        app.UseAuthorization();
-        app.MapControllers();
-        app.AddAppHealthChecks();
-        
-    }
-
-    private static void AddAppHealthChecks(this WebApplication app)
-    {
+        app.UseRouting();
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapHealthChecks("/health/ready", new HealthCheckOptions()
@@ -44,6 +36,11 @@ public static class Configurator
 
             endpoints.MapHealthChecks("/health/live", new HealthCheckOptions());
         });
+        app.UseHttpsRedirection();
+        app.UseAuthorization();
+        app.MapControllers();
+
     }
+    
 
 }
