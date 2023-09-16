@@ -20,17 +20,10 @@ public sealed record SendNotificationRequest
         if (!notification.NotificationTypes.Contains(NotificationType.Email))
             throw new Exception("This type can't be converted to emailRequest");
         
-        if (string.IsNullOrWhiteSpace(notification.Email))
-            throw new ArgumentNullException("Email",message:"For sending an email, email field shouldn't be null");
-        
-        if (string.IsNullOrWhiteSpace(notification.Message))
-            throw new ArgumentNullException("Message",message:"For sending an email, message field shouldn't be null");
-        
-        if (string.IsNullOrWhiteSpace(notification.ReceptorName))
-            throw new ArgumentNullException("ReceptorName",message:"For sending an email, receptorName field shouldn't be null");
-        
-        if (string.IsNullOrWhiteSpace(notification.Title))
-            throw new ArgumentNullException("Title",message:"For sending an email, title field shouldn't be null");
+        ArgumentNullException.ThrowIfNullOrEmpty(notification.Email);
+        ArgumentNullException.ThrowIfNullOrEmpty(notification.Message);
+        ArgumentNullException.ThrowIfNullOrEmpty(notification.ReceptorName);
+        ArgumentNullException.ThrowIfNullOrEmpty(notification.Title);
 
         SendEmailRequest emailRequest = new(notification.Email,notification.ReceptorName, notification.Title, notification.Message);
         return emailRequest;
@@ -39,13 +32,10 @@ public sealed record SendNotificationRequest
     {
         if (!notification.NotificationTypes.Contains(NotificationType.Sms))
             throw new Exception("This type can't be converted to smsRequest");
-        
-        if (string.IsNullOrWhiteSpace(notification.PhoneNumber))
-            throw new ArgumentNullException("PhoneNumber",message:"For sending a sms, phoneNumber field shouldn't be null");
-    
-        if (string.IsNullOrWhiteSpace(notification.Message))
-            throw new ArgumentNullException("Message",message:"For sending a sms, message field shouldn't be null");
 
+        ArgumentNullException.ThrowIfNullOrEmpty(notification.PhoneNumber);
+        ArgumentNullException.ThrowIfNullOrEmpty(notification.Message);
+        
         SendSmsRequest smsRequest = new(notification.PhoneNumber, notification.Message);
         return smsRequest;
     }
@@ -54,15 +44,10 @@ public sealed record SendNotificationRequest
         if (!notification.NotificationTypes.Contains(NotificationType.PushMessage))
             throw new Exception("This type can't be converted to pushMessageRequest");
         
-        if (string.IsNullOrWhiteSpace(notification.DeviceToken))
-            throw new ArgumentNullException("DeviceToken",message:"For sending a push message, deviceToken field shouldn't be null");
-    
-        if (string.IsNullOrWhiteSpace(notification.Title))
-            throw new ArgumentNullException("Title",message:"For sending a push message, title field shouldn't be null");
+        ArgumentNullException.ThrowIfNullOrEmpty(notification.DeviceToken);
+        ArgumentNullException.ThrowIfNullOrEmpty(notification.Title);
+        ArgumentNullException.ThrowIfNullOrEmpty(notification.Message);
         
-        if (string.IsNullOrWhiteSpace(notification.Message))
-            throw new ArgumentNullException("Message",message:"For sending a push message, message field shouldn't be null");
-
         SendPushMessageRequest pushMessageRequestRequest = new(notification.DeviceToken, notification.Title,notification.Message);
         return pushMessageRequestRequest;
     }
