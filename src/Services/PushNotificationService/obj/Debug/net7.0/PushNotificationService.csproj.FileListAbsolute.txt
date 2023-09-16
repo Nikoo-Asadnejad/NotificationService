@@ -32,8 +32,6 @@
 /Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/bin/Debug/net7.0/System.Diagnostics.DiagnosticSource.dll
 /Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/bin/Debug/net7.0/System.Text.Json.dll
-/Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/bin/Debug/net7.0/PushNotificationContracts.dll
-/Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/bin/Debug/net7.0/PushNotificationContracts.pdb
 /Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/obj/Debug/net7.0/PushNotificationService.csproj.AssemblyReference.cache
 /Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/obj/Debug/net7.0/PushNotificationService.GeneratedMSBuildEditorConfig.editorconfig
 /Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/obj/Debug/net7.0/PushNotificationService.AssemblyInfoInputs.cache
@@ -55,3 +53,5 @@
 /Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/obj/Debug/net7.0/PushNotificationService.pdb
 /Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/obj/Debug/net7.0/PushNotificationService.genruntimeconfig.cache
 /Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/obj/Debug/net7.0/ref/PushNotificationService.dll
+/Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/bin/Debug/net7.0/PushNotificationContract.dll
+/Users/macbook/Projects/NotificationService/src/Services/PushNotificationService/bin/Debug/net7.0/PushNotificationContract.pdb

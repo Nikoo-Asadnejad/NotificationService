@@ -13,7 +13,7 @@
           "MassTransit.AspNetCore": "7.3.1",
           "MassTransit.RabbitMQ": "8.1.1-develop.1522",
           "Microsoft.AspNetCore.OpenApi": "7.0.1",
-          "PushNotificationContracts": "1.0.0",
+          "PushNotificationContract": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -334,9 +334,12 @@
         }
       },
       "System.Threading.Channels/7.0.0": {},
-      "PushNotificationContracts/1.0.0": {
+      "PushNotificationContract/1.0.0": {
+        "dependencies": {
+          "FirebaseAdmin": "2.4.0"
+        },
         "runtime": {
-          "PushNotificationContracts.dll": {}
+          "PushNotificationContract.dll": {}
         }
       }
     }
@@ -613,7 +616,7 @@
       "path": "system.threading.channels/7.0.0",
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
-    "PushNotificationContracts/1.0.0": {
+    "PushNotificationContract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
