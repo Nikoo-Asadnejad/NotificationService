@@ -22,10 +22,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Consumers" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\..\Contracts\NotificationContract\NotificationContract.csproj" />
     </ItemGroup>
 
