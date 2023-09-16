@@ -1,3 +1,4 @@
+using NotificationContract.Enums;
 using NotificationContract.Models;
 
 namespace NotificationContract.Tests.TestData;
@@ -8,6 +9,7 @@ public static class TestDataGenerator
         => new SendNotificationRequest
         {
             Title = "test",
+            NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
             ReceptorName = "nikoo",
             Message = "test",
             Email = "nikoo@gmail.com",
@@ -21,6 +23,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = null,
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jkndkhcbsd",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -33,6 +36,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jkndkhcbsd",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -45,6 +49,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = " ",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jkndkhcbsd",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -60,6 +65,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = null,
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -72,6 +78,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -84,6 +91,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = " ",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -99,6 +107,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = null,
                 Message = "test",
@@ -111,6 +120,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "",
                 Message = "test",
@@ -123,6 +133,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "  ",
                 Message = "test",
@@ -138,6 +149,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "nikoo@gmail.com",
                 Message = null,
@@ -150,6 +162,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "nikoo@gmail.com",
                 Message = "",
@@ -162,6 +175,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "nikoo@gmail.com",
                 Message = " ",
@@ -177,6 +191,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -189,6 +204,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -201,6 +217,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -216,6 +233,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -228,6 +246,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "nikoo@gmail.com",
                 Message = "test",
@@ -240,6 +259,7 @@ public static class TestDataGenerator
             new SendNotificationRequest()
             {
                 Title = "test",
+                NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
                 Email = "nikoo@gmail.com",
                 Message = "test",

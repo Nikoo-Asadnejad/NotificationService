@@ -109,3 +109,11 @@
 /Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/obj/Debug/net7.0/NotificationContract.Tests.pdb
 /Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/obj/Debug/net7.0/NotificationContract.Tests.genruntimeconfig.cache
 /Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/obj/Debug/net7.0/ref/NotificationContract.Tests.dll
+/Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/bin/Debug/net7.0/FirebaseAdmin.dll
+/Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/bin/Debug/net7.0/Google.Api.Gax.dll
+/Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/bin/Debug/net7.0/Google.Api.Gax.Rest.dll
+/Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/bin/Debug/net7.0/Google.Apis.dll
+/Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/bin/Debug/net7.0/Google.Apis.Auth.PlatformServices.dll
+/Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/bin/Debug/net7.0/Google.Apis.Auth.dll
+/Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/bin/Debug/net7.0/Google.Apis.Core.dll
+/Users/macbook/Projects/NotificationService/Tests/Contracts/NotificationContract.Tests/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
