@@ -29,4 +29,9 @@
       <ProjectReference Include="..\..\Contracts\PushNotificationContract\PushNotificationContract.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="ApplicationCore" />
+      <Folder Include="Presentation" />
+    </ItemGroup>
+
 </Project>
