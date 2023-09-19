@@ -26,4 +26,8 @@
       <ProjectReference Include="..\..\Contracts\EmailContract\EmailContract.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="ApplicationCore" />
+    </ItemGroup>
+
 </Project>
