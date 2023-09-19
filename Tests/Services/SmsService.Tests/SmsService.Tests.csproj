@@ -35,4 +35,8 @@
       <ProjectReference Include="..\..\..\src\Services\SmsService\SmsService.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="ApplicationCore" />
+    </ItemGroup>
+
 </Project>
