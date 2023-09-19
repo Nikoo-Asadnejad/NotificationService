@@ -25,4 +25,9 @@
       <ProjectReference Include="..\..\Contracts\NotificationContract\NotificationContract.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="ApplicationCore" />
+      <Folder Include="Presentation" />
+    </ItemGroup>
+
 </Project>
