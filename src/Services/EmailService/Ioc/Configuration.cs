@@ -55,8 +55,6 @@ public struct Override
     public string Microsoft { get; set; }
     public string System { get; set; }
 }
-
-
 public struct ElasticSearch 
 {
     public string Uri { get; set; }

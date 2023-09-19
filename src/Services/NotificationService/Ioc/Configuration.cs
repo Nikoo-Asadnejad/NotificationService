@@ -17,6 +17,8 @@ public class AppSetting
 {
     public Logging Logging { get; set; }
     public string AllowedHosts { get; set; }
+    public SeriLog SeriLog { get; set; }
+    public ElasticSearch ElasticSearch { get; set; }
 }
 public struct Logging
 {
@@ -26,5 +28,23 @@ public struct LogLevel
 {
     public string Default { get; set; }
     public string Microsoft_AspNetCore { get; set; }
+}
+public struct SeriLog
+{
+    public MinimumLevel MinimumLevel { get; set; }
+}
+public struct MinimumLevel
+{
+    public string Default { get; set; }
+    public Override Override { get; set; }
+}
+public struct Override
+{
+    public string Microsoft { get; set; }
+    public string System { get; set; }
+}
+public struct ElasticSearch 
+{
+    public string Uri { get; set; }
 }
 
