@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Services" />
+      <Folder Include="ApplicationCore\Services" />
       <Folder Include="TestData" />
     </ItemGroup>
 
