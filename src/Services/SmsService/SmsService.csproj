@@ -26,4 +26,9 @@
       <ProjectReference Include="..\..\Contracts\SmsContract\SmsContract.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="ApplicationCore" />
+      <Folder Include="Presentation" />
+    </ItemGroup>
+
 </Project>
