@@ -23,10 +23,7 @@ public static class Configurator
                 _ => servideProvider.GetService<KaveNegarProvider>(),
             });
         
-        var appSetting = new AppSetting();
-        configuration.Bind(appSetting);
-        Configuration.AppSetting = appSetting;
-        
+        Configuration.SetUp(configuration);
         AddLogging(configuration);
     }
 
@@ -65,7 +62,6 @@ public static class Configurator
             endpoints.MapHealthChecks("/health/live", new HealthCheckOptions());
         });
     }
-    
     private static void AddLogging(IConfiguration configuration)
     {
         string environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");

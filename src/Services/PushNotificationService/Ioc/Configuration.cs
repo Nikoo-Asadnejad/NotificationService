@@ -18,18 +18,15 @@ public sealed class AppSetting
     public SeriLog SeriLog { get; set; }
     public ElasticSearch ElasticSearch { get; set; }
 }
-
 public struct Logging
 {
     public LogLevel LogLevel { get; set; }
 }
-
 public struct LogLevel
 {
     public string Default { get; set; }
     public string Microsoft_AspNetCore { get; set; }
 }
-
 public record MailSettings
 {
     public string Server { get; set; }
@@ -39,7 +36,6 @@ public record MailSettings
     public string UserName { get; set; }
     public string Password { get; set; }
 }
-
 public struct RabbitMqSetting
 {
     public  string Url { get; set; }
