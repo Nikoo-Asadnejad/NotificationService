@@ -2,7 +2,14 @@ namespace EmailService.Configurations;
 
 public struct Configuration
 {
-    public static AppSetting AppSetting { get; set; }
+    public static AppSetting AppSetting { get; private set; }
+    
+    public static void SetUp(IConfiguration configuration)
+    {
+        AppSetting appsetting = new();
+        configuration.Bind(appsetting);
+        Configuration.AppSetting = appsetting;
+    }
 }
 public class AppSetting
 {
