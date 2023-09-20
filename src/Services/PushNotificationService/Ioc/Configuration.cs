@@ -2,9 +2,15 @@ namespace PushNotificationService.Configurations;
 
 public struct Configuration
 {
-    public static AppSetting AppSetting { get;}
+    public static AppSetting AppSetting { get; private set; }
+    public static void SetUp(IConfiguration configuration)
+    {
+        AppSetting appsetting = new();
+        configuration.Bind(appsetting);
+        Configuration.AppSetting = appsetting;
+    }
 }
-public struct AppSetting
+public sealed class AppSetting
 {
     public Logging Logging { get; set; }
     public MailSettings MailSettings { get; set; }

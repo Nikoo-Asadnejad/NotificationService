@@ -13,7 +13,7 @@ public static class SmsConfigurator
 {
     public static void InjectService(this IServiceCollection services , IConfiguration configuration)
     {
-        configuration.Bind(Configuration.AppSetting);
+        Configuration.SetUp(configuration);
         services.AddMassTransit(configurator =>
         {
             configurator.UsingRabbitMq();
