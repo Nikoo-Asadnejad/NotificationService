@@ -60,7 +60,6 @@ public static class Configurator
             .Enrich.FromLogContext()
             .Enrich.WithEnvironmentName()
             .Enrich.WithMachineName()
-            .WriteTo.Console()
             .WriteTo.Debug()
             .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(Configuration.AppSetting.ElasticSearch.Uri))
             {

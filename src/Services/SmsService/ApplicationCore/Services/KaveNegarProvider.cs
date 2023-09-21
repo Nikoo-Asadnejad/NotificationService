@@ -32,19 +32,19 @@ public sealed class KaveNegarProvider : ISmsProvider
         }
         catch (ApiException ex)
         {
-            throw ex;
+            throw;
             //if the http response of web service is not 200 this exception will rise
             //return (HttpStatusCode.InternalServerError, message: ex.Message);
         }
         catch (HttpException ex)
         {
-            throw ex;
+            throw;
             //if the service is not reachable this exception will rise
             // return (HttpStatusCode.ServiceUnavailable, message: ex.Message);
         }
         catch (Exception ex)
         {
-            throw ex;
+            throw ;
             // return HttpStatusCode.InternalServerError;
         }
     }
