@@ -7,6 +7,7 @@ namespace NotificationContract.Models;
 
 public sealed record SendNotificationRequest
 {
+    public required string Id { get; set; }
     public required NotificationType[] NotificationTypes { get; set; }
     public string? Title { get;  set; }
     public string? ReceptorName { get;  set; }
