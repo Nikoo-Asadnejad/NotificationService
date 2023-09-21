@@ -8,6 +8,7 @@ public static class TestDataGenerator
     public static SendNotificationRequest CreateSampleRequest()
         => new SendNotificationRequest
         {
+            Id = Guid.NewGuid().ToString(),
             Title = "test",
             NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
             ReceptorName = "nikoo",
@@ -22,6 +23,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = null,
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jkndkhcbsd",
@@ -35,6 +37,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jkndkhcbsd",
@@ -48,6 +51,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = " ",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jkndkhcbsd",
@@ -64,6 +68,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = null,
@@ -77,6 +82,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "",
@@ -90,6 +96,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = " ",
@@ -106,6 +113,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -119,6 +127,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -132,6 +141,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -148,6 +158,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -161,6 +172,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -174,6 +186,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -190,6 +203,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -203,6 +217,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -216,6 +231,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -232,6 +248,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -245,6 +262,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
@@ -258,6 +276,7 @@ public static class TestDataGenerator
         {
             new SendNotificationRequest()
             {
+                Id = Guid.NewGuid().ToString(),
                 Title = "test",
                 NotificationTypes = new NotificationType[] {NotificationType.Email , NotificationType.Sms , NotificationType.PushMessage},
                 DeviceToken = "jdnhknshc",
