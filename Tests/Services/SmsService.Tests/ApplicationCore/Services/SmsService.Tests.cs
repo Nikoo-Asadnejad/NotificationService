@@ -4,6 +4,7 @@ using SmsContract.Models;
 using SmsService.Interfaces;
 using SmsService.Services;
 using SmsService.Tests.TestData;
+using SmsService.Tests.TestData.DataAttributes;
 
 namespace SmsService.Tests.Services;
 
@@ -11,10 +12,10 @@ public sealed class SmsService_Tests
 {
     private readonly ISmsService _smsService;
     private readonly Mock<ISmsProvider> _providerMoq;
+    private SendSmsRequest _sendSmsRequest = TestDataGenerator.CreateSampleRequest();
     public SmsService_Tests()
     {
         Mock<ISmsProvider> providerMoq = new();
-        
         Func<Provider, ISmsProvider> funcProvider = (provider) => providerMoq.Object;
         _providerMoq = providerMoq;
         _smsService = new SendSmsService(funcProvider);
@@ -28,7 +29,7 @@ public sealed class SmsService_Tests
     }
 
     [Theory]
-    [MemberData(nameof(TestDataGenerator.GetSmsRequestWithNullReceptors), MemberType = typeof(TestDataGenerator))]
+    [SmsRequestWithNullReceptorData]
     public async Task SendAsync_RequestModelReceptorMailIsNull_ThrowArgumentException(SendSmsRequest request)
     {
         var sendMethod = async () => await _smsService.SendAsync(request);
@@ -37,7 +38,7 @@ public sealed class SmsService_Tests
     }
 
     [Theory]
-    [MemberData(nameof(TestDataGenerator.GetSmsRequestWithNullMessage), MemberType = typeof(TestDataGenerator))]
+    [SmsRequestWithNullMessageData]
     public async Task SendAsync_RequestModelBodyIsNull_ThrowArgumentException(SendSmsRequest request)
     {
         var sendMethod = async () => await _smsService.SendAsync(request);
@@ -57,9 +58,8 @@ public sealed class SmsService_Tests
     [Fact]
     public async Task SendAsync_WhenCalled_ProviderSendShouldBeCalled()
     {
-        SendSmsRequest request = TestDataGenerator.CreateSampleRequest();
-        await _smsService.SendAsync(request);
-        _providerMoq.Verify(p=> p.SendAsync(request));
+        await _smsService.SendAsync(_sendSmsRequest);
+        _providerMoq.Verify(p=> p.SendAsync(_sendSmsRequest));
     }
     
     

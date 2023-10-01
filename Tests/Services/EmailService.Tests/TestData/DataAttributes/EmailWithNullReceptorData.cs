@@ -4,7 +4,7 @@ using Xunit.Sdk;
 
 namespace EmailService.Tests.TestData;
 
-public sealed class EmailWithNullReceptor : DataAttribute
+public sealed class EmailWithNullReceptorData : DataAttribute
 {
     public override IEnumerable<object[]> GetData(MethodInfo testMethod)
     {
