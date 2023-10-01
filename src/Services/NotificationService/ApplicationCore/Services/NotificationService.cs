@@ -12,6 +12,7 @@ public sealed class NotificationService : INotificationService
 {
     private readonly IPublishEndpoint _publishEndpoint;
 
+
     public NotificationService(IPublishEndpoint publishEndpoint)
     {
         _publishEndpoint = publishEndpoint;
