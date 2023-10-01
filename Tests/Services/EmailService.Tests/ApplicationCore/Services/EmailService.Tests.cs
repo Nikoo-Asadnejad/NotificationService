@@ -1,12 +1,11 @@
+using System.Net.Mail;
 using EmailContract.Models;
 using EmailService.Configurations;
 using EmailService.Interfaces;
 using EmailService.Services;
 using EmailService.Tests.TestData;
-using MailKit.Net.Smtp;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
-using MimeKit;
 using Moq;
 
 namespace EmailService.Tests.Services;
@@ -61,33 +60,13 @@ public sealed class EmailService_Tests
         var exception = await Assert.ThrowsAsync<ArgumentException>(sendMethod);
         Assert.Contains("Body" , exception.Message);
     }
-
-    [Fact]
-    public async Task SendAsync_WhenCalled_SmtpClientShouldConnect()
-    {
-        await _emailService.SendAsync(_sendEmailRequest);
-        _smtpClientMoq.Verify(s =>s.ConnectAsync(_mailSettings.Server, _mailSettings.Port, true, It.IsAny<CancellationToken>()));
-    }
     
-    
-    [Fact]
-    public async Task SendAsync_WhenCalled_SmtpClientShouldAuthenticate()
-    {
-        await _emailService.SendAsync(_sendEmailRequest);
-        _smtpClientMoq.Verify(s => s.AuthenticateAsync( _mailSettings.UserName, _mailSettings.Password, It.IsAny<CancellationToken>()));
-    }
-
     [Fact]
     public async Task SendAsync_WhenCalled_SmtpClientShouldSend()
     {
         await _emailService.SendAsync(_sendEmailRequest);
-        _smtpClientMoq.Verify(s=> s.SendAsync(null,It.IsAny<MimeMessage>(),It.IsAny<CancellationToken>(),null));
+        _smtpClientMoq.Verify(s=> s.SendAsync(It.IsAny<MailMessage>(),It.IsAny<CancellationToken>()));
     }
     
-    [Fact]
-    public async Task SendAsync_WhenCalled_SmtpClientShouldDisconnect()
-    {
-        await _emailService.SendAsync(_sendEmailRequest);
-        _smtpClientMoq.Verify(s=> s.DisconnectAsync(true,It.IsAny<CancellationToken>()));
-    }
+  
 }
