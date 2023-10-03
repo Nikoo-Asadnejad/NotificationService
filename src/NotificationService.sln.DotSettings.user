@@ -1,20 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3d53b640_002Df33b_002D494f_002Dabe1_002Dd6a1e8f691e1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SendAsync_RequestModelIsNull_ThrowArgumentNullException #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Or&gt;
-    &lt;TestAncestor&gt;
-      &lt;TestId&gt;xUnit::9BD9399D-4EB4-4D10-BB61-37076DC8004B::net7.0::EmailService.Tests.Services.EmailService_Tests&lt;/TestId&gt;
-      &lt;TestId&gt;xUnit::11744C85-2273-4CEF-8EE0-83625889E3D2::net7.0::SmsServiceTests.Services.SmsService_Tests&lt;/TestId&gt;
-      &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_SmsRequestExplicitOprator_Tests.ConvertToSendSmsRequest_PhoneNumberIsNull_ThrowsArgumentNullException&lt;/TestId&gt;
-      &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_SmsRequestExplicitOprator_Tests.ConvertToSendSmsRequest_MessageIsNull_ThrowsArgumentNullException&lt;/TestId&gt;
-      &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_EmailRequestExplicitOprator_Tests&lt;/TestId&gt;
-      &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_PushMessageRequestExplicitOprator_Tests&lt;/TestId&gt;
-      &lt;TestId&gt;xUnit::97646BBE-A716-43DB-8D6F-DE8131846BBE::net7.0::NotificationContract.Tests.Models.SendNotificationRequest_SmsRequestExplicitOprator_Tests.ConvertToSendSmsRequest_OnConvert_SendSmsRequestShouldBeFilledWithNotificationValues&lt;/TestId&gt;
-      &lt;TestId&gt;xUnit::637B3661-A006-4F7D-9672-58ACC0C4D38D::net7.0::PushNotificationContract.Tests.Models.SendPushMessage_MessageExplicitOprator_Tests.ConvertToFirebaseMessage_OnConvert_FirebaseMessageShouldBeFilledWithSameValues&lt;/TestId&gt;
-    &lt;/TestAncestor&gt;
-    &lt;Project Location="/Users/macbook/Projects/NotificationService/Tests/Services/SmsService.Tests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;Services&amp;gt;\&amp;lt;SmsService.Tests&amp;gt;" /&gt;
-    &lt;Project Location="/Users/macbook/Projects/NotificationService/Tests/Contracts/PushNotificationContract.Tests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;Contracts&amp;gt;\&amp;lt;PushNotificationContract.Tests&amp;gt;" /&gt;
-  &lt;/Or&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3d53b640_002Df33b_002D494f_002Dabe1_002Dd6a1e8f691e1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SendAsync_RequestModelIsNull_ThrowArgumentNullException #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dde5abf6_002Db44a_002D4a6d_002D8692_002Df5eb20189c1d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SendAsync_RequestModelIsNull_ThrowArgumentNullException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dde5abf6_002Db44a_002D4a6d_002D8692_002Df5eb20189c1d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SendAsync_RequestModelIsNull_ThrowArgumentNullException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Project Location="/Users/macbook/Projects/NotificationService/src" Presentation="&amp;lt;Tests&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
